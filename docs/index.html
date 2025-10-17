@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airwindows Plugin Documentation</title>
+    <meta name="description" content="Comprehensive documentation for 400+ Airwindows audio plugins - open source DSP for mixing, mastering, and sound design">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+</head>
+<body data-theme="dark">
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo-section">
+                <h1 class="logo">Airwindows</h1>
+                <p class="tagline">Open Source Audio DSP</p>
+            </div>
+            
+            <nav class="main-nav">
+                <button class="nav-btn" data-view="home">Home</button>
+                <button class="nav-btn" data-view="categories">Categories</button>
+                <button class="nav-btn" data-view="plugins">All Plugins</button>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </nav>
+        </div>
+        
+        <!-- Search Bar -->
+        <div class="search-container">
+            <div class="container">
+                <input 
+                    type="search" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Search plugins by name, category, or description..."
+                    aria-label="Search plugins"
+                >
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Home View -->
+            <div id="homeView" class="view active">
+                <section class="hero">
+                    <h2 class="hero-title">400+ Open Source Audio Plugins</h2>
+                    <p class="hero-description">
+                        Explore the complete collection of Airwindows plugins - from mixing and mastering 
+                        to creative effects and sound design. All MIT licensed and free to use.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" id="totalPlugins">400+</span>
+                            <span class="stat-label">Total Plugins</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="categoryCount">22</span>
+                            <span class="stat-label">Categories</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">MIT</span>
+                            <span class="stat-label">Open Source</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Featured Plugins -->
+                <section class="section">
+                    <h3 class="section-title">Recommended Plugins</h3>
+                    <div id="featuredPlugins" class="plugin-grid"></div>
+                </section>
+
+                <!-- Categories Preview -->
+                <section class="section">
+                    <h3 class="section-title">Browse by Category</h3>
+                    <div id="categoriesPreview" class="category-grid"></div>
+                </section>
+            </div>
+
+            <!-- Categories View -->
+            <div id="categoriesView" class="view">
+                <div class="view-header">
+                    <h2>Plugin Categories</h2>
+                    <p>Browse plugins organized by their primary function</p>
+                </div>
+                <div id="categoriesList" class="category-grid"></div>
+            </div>
+
+            <!-- Plugins List View -->
+            <div id="pluginsView" class="view">
+                <div class="view-header">
+                    <h2>All Plugins</h2>
+                    <div class="filter-controls">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="latest">Latest</button>
+                        <button class="filter-btn" data-filter="recommended">Recommended</button>
+                        <button class="filter-btn" data-filter="basic">Basic</button>
+                    </div>
+                </div>
+                <div class="plugins-header">
+                    <span id="pluginCount">Loading...</span>
+                </div>
+                <div id="pluginsList" class="plugin-list"></div>
+            </div>
+
+            <!-- Plugin Detail View -->
+            <div id="pluginDetailView" class="view">
+                <button class="back-btn" id="backBtn">← Back</button>
+                <div id="pluginDetail"></div>
+            </div>
+
+            <!-- Category Detail View -->
+            <div id="categoryDetailView" class="view">
+                <button class="back-btn" id="categoryBackBtn">← Back to Categories</button>
+                <div id="categoryDetail"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Airwindows</h4>
+                    <p>Open source audio plugins by Chris Johnson</p>
+                    <p>MIT Licensed - Free to use and modify</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/airwindows/airwindows" target="_blank">GitHub Repository</a></li>
+                        <li><a href="https://www.airwindows.com" target="_blank">Official Website</a></li>
+                        <li><a href="https://www.patreon.com/airwindows" target="_blank">Support on Patreon</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Documentation</h4>
+                    <ul class="footer-links">
+                        <li><a href="../README.md">Getting Started</a></li>
+                        <li><a href="guides/building.md">Build Instructions</a></li>
+                        <li><a href="../LICENSE">License</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Airwindows. Documentation created for learning and AI training purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

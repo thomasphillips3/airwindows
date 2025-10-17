@@ -1,0 +1,89 @@
+# kStation
+
+![Latest](https://img.shields.io/badge/-Latest-10b981) ![Recommended](https://img.shields.io/badge/-Recommended-6366f1)
+
+## Quick Info
+
+| | |
+|---|---|
+| **Category** | Reverb |
+| **Type** | Reverb |
+| **Status** | Latest Release |
+
+## Description
+
+a realistic small room modeled after David Bowie's vocal reverb
+
+## Detailed Overview
+
+Turns out I'm getting asked for smaller reverbs for a reason.
+
+Comparatively small spaces can merge with a sound in an interesting way. Rather than adding a sustain, the reverb can turn into part of the tone, thickening and glamorizing it to the point that, if you listened to just the dry signal, it'd be a bit shocking… especially if it was recorded in a dead place like a studio or under a tent of blankets or what have you.
+
+This is kStation, another extension of Airwindows reverbs in the direction I'm going. It takes everything you had in kGuitarHall2, the unusual midrange depth that comes across even on a cellphone, the ability to position your source in the virtual room, and it brings it to a tiny space that acts like a room, but isn't inspired by one.
+
+Because it's inspired by David Bowie's vocal sound on Station To Station, and that's probably one of the very first digital reverbs.
+
+No effort is being made to emulate vintage digital reverb things. None. There's a kind of darkness out of those old discrete converter circuits: that's handled instead by Bezier undersampling and filtering. You can get funny overtones by setting kStation's filter over 0.5 (like the undersampling, the Bezier filter goes two ways) but they aren't vintage-digital overtones, they're something else, something new. You get depth but it's not from modeling an antique reverb, it's from where Airwindows algorithm development is going.
+
+It's a unique algorithm, generated to do just this, and it's there to merge with your vocal (or whatever else you wish) and sound like a hit record. Specifically, it wants to give you the richness and sumptuousness of Bowie circa Station To Station. You'll have to sing or it won't work, but this and perhaps some Silken (also a nice trick for that stuff) and you can get a giant head start.
+
+There'll be more, but this one is gonna come in real handy. I hope you like it :)
+
+## Signal Flow
+
+```mermaid
+graph LR
+    A[Input] --> B[Early Reflections]
+    A --> C[Diffusion]
+    C --> D[Feedback]
+    D --> C
+    B --> E[Mix]
+    C --> E
+    A --> E
+    E --> F[Output]
+    style C fill:#6366f1
+    style D fill:#8b5cf6
+```
+
+## How It Works
+
+kStation creates spatial effects through algorithmic reverb. Use it to add depth, space, and dimension to your tracks.
+
+## Usage Tips
+
+- Less is often more - start conservative
+- Use pre-delay for clarity
+- EQ the reverb return (cut lows, sometimes highs)
+- Match decay time to song tempo
+
+
+## Related Plugins
+
+Browse other [Reverb](../categories/reverb.md) plugins.
+
+
+## Technical Details
+
+**Source Code**: [View on GitHub](https://github.com/airwindows/airwindows/tree/master/plugins/LinuxVST/src/kStation)
+
+**Categories**: Reverb
+
+**Available Formats**:
+- Mac AU
+- Mac VST
+- Windows VST
+- Linux VST
+
+## Resources
+
+- [All Airwindows Plugins](../../README.md)
+- [Category: Reverb](../categories/reverb.md)
+- [Airwindows Website](https://www.airwindows.com)
+- [Airwindows GitHub](https://github.com/airwindows/airwindows)
+
+---
+
+*Part of the Airwindows plugin collection - Open source audio processing plugins*
+
+*Last updated: 2024*
