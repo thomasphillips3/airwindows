@@ -51,20 +51,19 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 781899426;
-			PBXWorkspaceStateSaveDate = 781899426;
+			PBXPerProjectTemplateStateSaveDate = 787087708;
+			PBXWorkspaceStateSaveDate = 787087708;
 		};
 		perUserProjectItems = {
-			8B962AAA2E9AD07A000EAC04 /* PBXTextBookmark */ = 8B962AAA2E9AD07A000EAC04 /* PBXTextBookmark */;
-			8B962ADC2E9AD297000EAC04 /* PBXTextBookmark */ = 8B962ADC2E9AD297000EAC04 /* PBXTextBookmark */;
-			8B962B2D2E9AD3DA000EAC04 /* PBXTextBookmark */ = 8B962B2D2E9AD3DA000EAC04 /* PBXTextBookmark */;
-			8B962BA12E9AD778000EAC04 /* PBXTextBookmark */ = 8B962BA12E9AD778000EAC04 /* PBXTextBookmark */;
+			8B5AB4362EE9BF2400A3F512 /* PBXTextBookmark */ = 8B5AB4362EE9BF2400A3F512 /* PBXTextBookmark */;
+			8B5AB4382EE9BF2400A3F512 /* PBXTextBookmark */ = 8B5AB4382EE9BF2400A3F512 /* PBXTextBookmark */;
+			8B5AB5B52EEA141600A3F512 /* PBXTextBookmark */ = 8B5AB5B52EEA141600A3F512 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 8BD3CCB8148830B20062E48C /* Source Control */;
 		userBuildSettings = {
 		};
 	};
-	8B962AAA2E9AD07A000EAC04 /* PBXTextBookmark */ = {
+	8B5AB4362EE9BF2400A3F512 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 8BA05A690720730100365D66 /* ConsoleX2BussVersion.h */;
 		name = "ConsoleX2BussVersion.h: 1";
@@ -74,42 +73,32 @@
 		vrLen = 258;
 		vrLoc = 0;
 	};
-	8B962ADC2E9AD297000EAC04 /* PBXTextBookmark */ = {
+	8B5AB4382EE9BF2400A3F512 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 8BA05A660720730100365D66 /* ConsoleX2Buss.cpp */;
-		name = "ConsoleX2Buss.cpp: 516";
+		name = "ConsoleX2Buss.cpp: 373";
 		rLen = 0;
-		rLoc = 22774;
+		rLoc = 16939;
 		rType = 0;
-		vrLen = 148;
-		vrLoc = 22439;
+		vrLen = 267;
+		vrLoc = 16825;
 	};
-	8B962B2D2E9AD3DA000EAC04 /* PBXTextBookmark */ = {
+	8B5AB5B52EEA141600A3F512 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 8BC6025B073B072D006C4272 /* ConsoleX2Buss.h */;
-		name = "ConsoleX2Buss.h: 97";
+		fRef = 8BA05A660720730100365D66 /* ConsoleX2Buss.cpp */;
+		name = "ConsoleX2Buss.cpp: 373";
 		rLen = 0;
-		rLoc = 4804;
+		rLoc = 16939;
 		rType = 0;
-		vrLen = 112;
-		vrLoc = 4700;
-	};
-	8B962BA12E9AD778000EAC04 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 8BC6025B073B072D006C4272 /* ConsoleX2Buss.h */;
-		name = "ConsoleX2Buss.h: 97";
-		rLen = 0;
-		rLoc = 4804;
-		rType = 0;
-		vrLen = 61;
-		vrLoc = 4751;
+		vrLen = 188;
+		vrLoc = 16866;
 	};
 	8BA05A660720730100365D66 /* ConsoleX2Buss.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1308, 15822}}";
-			sepNavSelRange = "{39367, 15}";
-			sepNavVisRange = "{38789, 1325}";
-			sepNavWindowFrame = "{{-6, 75}, {1066, 786}}";
+			sepNavIntBoundsRect = "{{0, 0}, {921, 13572}}";
+			sepNavSelRange = "{16939, 0}";
+			sepNavVisRange = "{16866, 188}";
+			sepNavWindowFrame = "{{14, 51}, {1146, 827}}";
 		};
 	};
 	8BA05A690720730100365D66 /* ConsoleX2BussVersion.h */ = {
@@ -117,7 +106,7 @@
 			sepNavIntBoundsRect = "{{0, 0}, {554, 1098}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 258}";
-			sepNavWindowFrame = "{{38, 66}, {1066, 786}}";
+			sepNavWindowFrame = "{{431, 92}, {1066, 786}}";
 		};
 	};
 	8BA05A7F072073D200365D66 /* AUBase.cpp */ = {
@@ -129,10 +118,10 @@
 	};
 	8BC6025B073B072D006C4272 /* ConsoleX2Buss.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {554, 4608}}";
-			sepNavSelRange = "{4804, 0}";
-			sepNavVisRange = "{4751, 61}";
-			sepNavWindowFrame = "{{374, 68}, {1066, 786}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 4014}}";
+			sepNavSelRange = "{7268, 0}";
+			sepNavVisRange = "{3342, 1138}";
+			sepNavWindowFrame = "{{5, 58}, {838, 820}}";
 		};
 	};
 	8BD3CCB8148830B20062E48C /* Source Control */ = {

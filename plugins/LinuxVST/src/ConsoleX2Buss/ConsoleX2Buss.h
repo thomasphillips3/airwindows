@@ -16,26 +16,19 @@
 #include <math.h>
 
 enum {
-	kParamA =0,
-	kParamB =1,
-	kParamC =2,
-	kParamD =3,
-	kParamE =4,
-	kParamF =5,
-	kParamG =6,
-	kParamH =7,
-	kParamI =8,
-	kParamJ =9,
-	kParamK =10,
-	kParamL =11,
-	kParamM =12,
-	kParamN =13,
-	kParamO =14,
-	kParamP =15,
-	kParamQ =16,
-  kNumParameters = 17
+	kParamHIG =0,
+	kParamHMG =1,
+	kParamLMG =2,
+	kParamBSG =3,
+	kParamHIF =4,
+	kParamHMF =5,
+	kParamLMF =6,
+	kParamBSF =7,
+	kParamTHR =8,
+	kParamPAN =9,
+	kParamFAD =10,
+  kNumParameters = 11
 }; //
-const int dscBuf = 256;
 
 const int kNumPrograms = 0;
 const int kNumInputs = 2;
@@ -69,23 +62,17 @@ private:
     char _programName[kVstMaxProgNameLen + 1];
     std::set< std::string > _canDo;
     
-    float A;
-    float B;
-    float C;
-    float D;
-    float E;
-    float F;
-    float G;
-    float H;
-    float I;
-    float J;
-    float K;
-    float L;
-    float M;
-    float N;
-    float O;
-    float P;
-    float Q;
+    float HIG;
+    float HMG;
+    float LMG;
+    float BSG;
+    float HIF;
+    float HMF;
+    float LMF;
+    float BSF;
+    float THR;
+    float PAN;
+    float FAD;
 
 	enum {
 		biq_freq,
@@ -121,51 +108,34 @@ private:
 	//SmoothEQ2
 	
 	enum {
-		bez_AL,
-		bez_BL,
-		bez_CL,
-		bez_InL,
-		bez_UnInL,
-		bez_SampL,
-		bez_AR,
-		bez_BR,
-		bez_CR,
-		bez_InR,
-		bez_UnInR,
-		bez_SampR,
+		bez_A,
+		bez_B,
+		bez_C,
+		bez_Ctrl,
 		bez_cycle,
 		bez_total
 	}; //the new undersampling. bez signifies the bezier curve reconstruction
 	double bezCompF[bez_total];
-	double bezMaxF;
 	double bezCompS[bez_total];
-	double bezGate;
-	//Dynamics2
+	//Dynamics2 custom for buss
 	
-	double iirHPositionL[23];
-	double iirHAngleL[23];
-	double iirHPositionR[23];
-	double iirHAngleR[23];
-	bool hBypass;
-	double iirLPositionL[15];
-	double iirLAngleL[15];
-	double iirLPositionR[15];
-	double iirLAngleR[15];
-	bool lBypass;
-	double lFreqA;
-	double lFreqB; //the lowpass
-	double hFreqA;
-	double hFreqB; //the highpass
-	//Cabs2
-	
-	double dBaL[dscBuf+5];
-	double dBaPosL;
-	int dBaXL;
-	double dBaR[dscBuf+5];
-	double dBaPosR;
-	int dBaXR;
-	//Discontapeity
-	
+	double avg32L[33];
+	double avg32R[33];
+	double avg16L[17];
+	double avg16R[17];
+	double avg8L[9];
+	double avg8R[9];
+	double avg4L[5];
+	double avg4R[5];
+	double avg2L[3];
+	double avg2R[3];
+	int avgPos;
+	double lastSlewL;
+	double lastSlewR;
+	double lastSlewpleL;
+	double lastSlewpleR;
+	//preTapeHack
+		
 	double panA;
 	double panB;
 	double inTrimA;
