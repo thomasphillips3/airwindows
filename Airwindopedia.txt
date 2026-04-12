@@ -9,15 +9,15 @@ Actually it turns out that other devs can use this file to do amazing things lik
 
 Ambience: ClearCoat, TapeDelay2, Doublelay, PitchDelay, SampleDelay, BrightAmbience3, TripleSpread, Melt, MV2, MV, ADT, kChamberAR, StereoChorus, PurestEcho, TapeDelay, StarChild2, StarChild, Hombre, BrightAmbience2, BrightAmbience, StereoEnsemble, StereoDoubler, Chorus, ChorusEnsemble, Ensemble
 
-Amp Sims: ChimeyDeluxe, Cabs2, PointyGuitar, PointyDeluxe, ChimeyGuitar, GrindAmp, FireAmp, LeadAmp, CrickBass, Wolfbot, LilAmp, MidAmp, BigAmp, Cabs, BassDrive, BassAmp
+Amp Sims: ChimeyDeluxe, ChimeyGuitar2, Cabs2, PointyGuitar, PointyDeluxe, ChimeyGuitar, GrindAmp, FireAmp, LeadAmp, CrickBass, Wolfbot, LilAmp, MidAmp, BigAmp, Cabs, BassDrive, BassAmp
 
 Bass: DubSub2, OrbitKick, Elliptical, Hermepass, BassKit, DubCenter, DubSub, Floor, Infrasonic, FathomFive
 
 Biquads: BiquadStack, BiquadNonLin, BiquadHiLo, BiquadPlus, Biquad, BiquadDouble, BiquadOneHalf, BiquadTriple, Biquad2
 
-Brightness: Air4, Air3, PlatinumSlew, DeBess, GoldenSlew, Sinew, SlewSonic, Acceleration2, DeEss, Smooth, EverySlew, Slew3, Slew2, Slew, Air2, Air, PurestAir, Acceleration, DeHiss, Hypersonic, HypersonX, Ultrasonic, UltrasonicLite, UltrasonicMed, UltrasonX
+Brightness: Air4, Air3, Slew4, PlatinumSlew, DeBess, GoldenSlew, Sinew, SlewSonic, Acceleration2, DeEss, Smooth, EverySlew, Slew3, Slew2, Slew, Air2, Air, PurestAir, Acceleration, DeHiss, Hypersonic, HypersonX, Ultrasonic, UltrasonicLite, UltrasonicMed, UltrasonX
 
-Clipping: ClipOnly2, ADClip8, ClipSoftly, OneCornerClip, ADClip7, AQuickVoiceClip, ClipOnly, FinalClip
+Clipping: ClipOnly3, ADClip8, ClipOnly2, ClipSoftly, OneCornerClip, ADClip7, AQuickVoiceClip, ClipOnly, FinalClip
 
 Consoles: Console9Buss, Console9Channel, ConsoleLABuss, ConsoleLAChannel, ConsoleMCBuss, ConsoleMCChannel, ConsoleMDBuss, ConsoleMDChannel, Console8LiteChannel, Console8LiteBuss, Console8BussHype, Console8BussIn, Console8BussOut, Console8ChannelHype, Console8ChannelIn, Console8ChannelOut, Console8SubHype, Console8SubIn, Console8SubOut, Console0Channel, Console0Buss, PurestConsole3Buss, PurestConsole3Channel, PurestConsole2Buss, PurestConsole2Channel, Console7Buss, Console7Channel, Console7Cascade, Console7Crunch, PurestConsoleBuss, PurestConsoleChannel,Console6Buss, Console6Channel, PDBuss, PDChannel, Console5Buss, Console5Channel, Console5DarkCh, C5RawBuss, C5RawChannel, AtmosphereBuss, AtmosphereChannel, Console4Buss, Console4Channel, EveryConsole
 
@@ -29,27 +29,27 @@ Dynamics: Dynamics2, Pressure6, BeziComp, Pop3, Pop2, Pressure5, StoneFireComp, 
 
 Effects: TakeCare, RingModulator, Dubly3, Dubly2, GalacticVibe, CloudCoat, Disintegrate, Fracture2, Dubly, Pafnuty2, PitchNasty, Trianglizer, ShortBuss, GuitarConditioner, Aura, TremoSquare, Tremolo, GlitchShifter, Gringer, Exciter, Energy2, Energy, Facet, Fracture, PowerSag2, PowerSag, Preponderant, Nikola
 
-Filter: SmoothEQ3, PearEQ, SmoothEQ2, SmoothEQ, Parametric, Silken, Stonefire, AngleEQ, AngleFilter, Isolator3, BezEQ, Baxandall2, Pear2, Capacitor2, Distance3, Pear, ResEQ2, SubTight, CStrip2, Weight, Isolator2, Kalman, PrimeFIR, Holt2, Holt, ToneSlant, AverMatrix, Average, MackEQ, Hull2, Baxandall, Hull, EQ, Capacitor, Isolator, TapeFat, ResEQ, Lowpass2, Highpass2, Distance, Distance2, Lowpass, Highpass
+Filter: SmoothEQ3, PearEQ, FatEQ, SmoothEQ2, BezEQ2, SmoothEQ, Parametric, Dattorro, Donut, Silken, Stonefire, AngleEQ, AngleFilter, Isolator3, BezEQ, Baxandall3, Baxandall2, Baxandall, Pear2, Capacitor2, Distance3, Pear, ResEQ2, SubTight, CStrip2, Weight, Isolator2, Kalman, PrimeFIR, Holt2, Holt, ToneSlant, AverMatrix, Average, MackEQ, Hull2, Hull, EQ, Capacitor, Isolator, TapeFat, ResEQ, Lowpass2, Highpass2, Distance, Distance2, Lowpass, Highpass
 
 Lo-Fi: DeBez, HipCrush, Flutter2, DeRez3, Pockey2, CrunchyGrooveWear, GrooveWear, Pockey, Flutter, DeRez2, BitGlitter, DeRez, TapeBias, ChromeOxide, Cojones, Vibrato, Bite, Deckwrecka, DustBunny
 
-Noise: Noise, Texturize, TexturizeMS, VoiceOfTheStarship, DarkNoise, ElectroHat, Silhouette, TapeDust
+Noise: DeNoise, Noise, Texturize, TexturizeMS, VoiceOfTheStarship, DarkNoise, ElectroHat, Silhouette, TapeDust
 
-Reverb: kStation, kGuitarHall2, kCathedral5, VerbTiny, VerbThic, kAlienSpaceship, kCathedral4, kBeyond, VerbSixes, kCosmos, Galactic3, kCathedral3, kPlate140, kPlate240, CreamCoat, kGuitarHall, kPlateD, kPlateB, kPlateA, kPlateC, CrunchCoat, kCathedral2, Verbity2, Galactic, Galactic2, Verbity, Chamber2, Chamber, Infinity2, NonlinearSpace, kCathedral, Infinity, MatrixVerb, PocketVerbs, Reverb
+Reverb: kWoodRoom, kStation, kGuitarHall2, kCathedral5, VerbTiny, VerbThic, kAlienSpaceship, kCathedral4, kBeyond, VerbSixes, kCosmos, Galactic3, kCathedral3, kPlate140, kPlate240, CreamCoat, kGuitarHall, kPlateD, kPlateB, kPlateA, kPlateC, CrunchCoat, kCathedral2, Verbity2, Galactic, Galactic2, Verbity, Chamber2, Chamber, Infinity2, NonlinearSpace, kCathedral, Infinity, MatrixVerb, PocketVerbs, Reverb
 
 Saturation: PurestSaturation, SquareRoot, Hypersoft, Creature, Huge, NCSeventeen, Tube2, Tube, Spiral2, PurestDrive, Focus, Mojo, Dyno, Spiral, UnBox, Desk4, Righteous4
 
-Stereo: Srsly3, Srsly2, Srsly, Wider, StereoFX, ToVinyl4, AutoPan, LRFlipTimer, MSFlipTimer, Sidepass, SideDull
+Stereo: Srsly3, Srsly2, Srsly, SweetWide, Wider, StereoFX, ToVinyl4, AutoPan, LRFlipTimer, MSFlipTimer, Sidepass, SideDull
 
 Subtlety: Mastering2, Discontapeity, Mastering, Discontinuity, Hype, Shape, Inflamer, Sweeten, PurestWarm2, PurestWarm, Coils2, Interstage, PhaseNudge, Remap, SingleEndedTriode, Coils, Desk, TransDesk, TubeDesk
 
-Tape: TapeHack, ToTape8, ToTape7, ToTape6, FromTape, Tape, IronOxideClassic2, IronOxide5, ToTape5, IronOxideClassic
+Tape: ToTape9, TapeHack2, ToTape8, ToTape7, ToTape6, FromTape, TapeHack, Tape, IronOxideClassic2, IronOxide5, ToTape5, IronOxideClassic
 
 Tone Color: BussColors4, Channel9, Apicolypse, Neverland, Elation, Calibre, Cider, Crystal, Precious, Luxor, Channel8, Channel7, Channel6, Channel5, Channel4
 
 Utility: SoftClock2, SoftClock, BitShiftPan, BitShiftGain, PurestGain, PurestDualPan, PurestFade, Monitoring3, Monitoring2, Monitoring, EveryTrim, HermeTrim, DubPlate2, DubPlate, CansAW, Cans, SlewOnly, SubsOnly, PeaksOnly, Golem, DCVoltage, LRConvolve2, LRConvolve, EdIsDim, MidSide, uLawEncode, uLawDecode, RightoMono, LeftoMono, Balanced, Flipity, MoNoam, VoiceTrick, DeCrackle, ContentHideD
 
-XYZ Filters: ZBandpass2, ZHighpass2, ZLowpass2, ZNotch2, ZRegion2, ZBandpass, ZHighpass, ZLowpass, ZNotch, ZRegion, YBandpass, YNotBandpass, YHighpass, YNotHighpass, YLowpass, YNotLowpass, YNotch, YNotNotch, XBandpass. XHighpass, XLowpass, XNotch, XRegion
+XYZ Filters: ZAcidLowpass, ZBandpass2, ZHighpass2, ZLowpass2, ZNotch2, ZRegion2, ZBandpass, ZHighpass, ZLowpass, ZNotch, ZRegion, YBandpass, YNotBandpass, YHighpass, YNotHighpass, YLowpass, YNotLowpass, YNotch, YNotNotch, XBandpass. XHighpass, XLowpass, XNotch, XRegion
 
 
 ############ Acceleration is an acceleration limiter that tames edge, leaves brightness.
@@ -325,6 +325,28 @@ But there's nothing natural about the cranked-up 24dB boosts and cuts you can no
 
 This is Baxandall in the form that I will need it, for doing things with. But since it's Airwindows, you can use it too. And you can still use the original Baxandall, that's not going anywhere and has its own merits. Baxandall2 is just… more, at any cost, no holds barred. Hope you like it.
 
+############ Baxandall3 is for new tone colors.
+
+The new Baxandall combines elements of Baxandall2, with things I'd left behind in Baxandall the original, to produce something that has tone colors which haven't been heard before.
+
+The catch is, it's because people don't go for these tone colors, or know how to get them, or what to do with them if they had them. But when has that ever stopped us? This could be your lucky day (or, a big waste of time :) )
+
+The new Baxandall adopts the technique from its predecessor, letting you apply larger boosts and cuts, and sweeping the frequencies so you're accentuating the extremes when you get extra aggressive. It's based on Bessel filter slopes, but it brings back interleaving (meaning that it'll take on odd and interesting flavors when you get aggressive with the highs, and it can only tilt so far).
+
+But most of all, it brings back the Console processing (tweaked for maximum sonic density) and it does it in a strange, backwards way.
+
+If you apply slight boosts, the loudness goes up… INSIDE the processing. This is the same as if you were playing with the DAW faders in a Console mix. It's 'Doing It Wrong', but wrong on purpose. What happens when you do this basic, fundamental thing wrong?
+
+Firstly, the filter becomes hypersensitive to near-flat settings. If you boost, you're not just increasing that frequency's level, you're also pushing it harder into the 'anti-saturation' and getting that much hotter a result. The calibration's off. It'll be expanded, peakier, more dynamic.
+
+If you cut, you're pulling it back before it reaches 'anti-saturation', so it's not only softer, it's also more distorted. The dynamic punch is flattened, because it's saturation that hasn't been counteracted. You step really hard on the presence and punchiness of whatever's being turned down.
+
+There's an input gain control so you can gain stage this, but it's all working off Treble and Bass being either exactly 0.5, or Bad Things happen. The fact that they're interleaved Bessel filters just means the things that happen are spread across a wider range. The tone shapings that can happen out of this are really interesting and bizarre.
+
+Thing is, there's a twist to the catch. Stuff being expanded and dynamic-ified when it gets louder? That behavior also makes things sound farther away. Suppressing and distorting stuff more when you turn it down? That tends to make things sound more close-up. So the most basic, fundamental operations of Baxandall3 simultaneously apply huge EQ curves, while also hiding them and making them shift spatially the opposite to what you'd expect. Normally when we push levels up we expect saturation to rise. In Console7, the first time I experimented with this mechanic, that's what you get: more is also closer, and it's very natural and easy to hear. This? This is backwards.
+
+I can't even imagine what people will make of this. If you're not being super-aggressive with it, you'll find that it responds to the tiniest adjustments. If you are getting super-aggressive with it, let me know what works and what doesn't because I'm still wrapping my head around how it even works. I assume there's going to be some sort of sound that Baxandall3 fits perfectly, and I'm not entirely sure what it'd be. But in its backward spatial tomfoolery, I'm sure it's the missing link for getting SOME kind of tone. Enjoy exploring!
+
 ############ Beam is a wordlength reducer that tries to heighten sonority.
 
 Beam’s a wordlength reducer like Dark, but instead of seeking to always give you the least departure from whatever trajectory the audio’s on (like Dark: and that suppresses highs, including noise in the highs), Beam seeks to make all waveforms converge on the same angle (either ascending, or descending). Imagine a world of triangle-waves, the deepest frequencies taking the most energy, and progressively quieter until high frequencies are in balance with the lows. That’s Beam. Beam has a ‘focus’ control that sort of optimizes the frequency range it’s providing a window into (as in, lower settings SEEM to encourage focus on deeper sounds, higher settings SEEMS to highlight the treble, and the 0.5 is set to zero in on where our hearing’s most sensitive.) And it uses those frequencies, across a broad range of possible sounds, to emphasize the energy and depth of the audio to shocking effect.
@@ -360,6 +382,21 @@ And that's not even getting into when you do this, and then make the cutoffs fig
 And then dial it back to as subtle as you like, simply by making Treble, Mid and Bass be closer to each other.
 
 Have fun and don't say I didn't warn you :)
+
+############ BezEQ2 is a unique, subtle three-band shelving EQ.
+
+Turns out there's a reason BezEQ sounded so weird! Bugs. Both in the sense of 'what's that doing there' and 'hey, this could be very different and it just might work'. So now there's two BezEQs, the first one is still a strange strange beast, and this one is…
+
+…fugitive?
+
+It's hard to explain how different this became. It's still a three-band EQ made by crossing over filters in such a way that re-adding them produces perfect fidelity: that works great even on steep filters like SmoothEQ. It even works if you do funny things like heavy phase shifting in the filter… or if, like in this filter, you're delaying bands to more accurately cancel out bass frequencies. (This filter incurs a little bit of latency, depending on how the crossovers are set, because of these delays.)
+
+Far from the first BezEQ, this BezEQ2 has a special knack for hiding what it's doing. It can boost highs, boost bass, and the result is weirdly like no change was made. There's a quirk where if you cut the middle all the way to zero, the highs will also cut out (a side-effect of how the delays are set up). It's still not exactly normal.
+
+And then, perhaps a factor of how the bands are summed together, if you go to cut highs or lows, BezEQ does the opposite. It gives you a midrangey sound with a lot of punch and character. This, even though it's doing the opposite of last week's FatEQ, and isn't distorting anything. Something about how the Bezier curves handle transient impact, combined with the phase-altering delay lines, makes the plugin a heck of a secret weapon for heightening midrange drama and impact. Or, you can just set it up as first a mids cut, and then even more of a bass cut, and get a really articulate, natural-sounding energy lift that sounds remarkably unhyped for all the hype it sneaks into a track.
+
+I have a feeling this is gonna be a real 'sleeper' plugin. It seems to do anything I ask while sounding like nothing was done. Those who are trying to mix by adding color upon color to their sounds, probably won't get this at all. But those of a simpler, rawer approach might really be pleasantly surprised. Even startled, in the best possible way.
+
 
 ############ BeziComp is a radical compressor that eliminates aliasing!
 
@@ -979,6 +1016,24 @@ Instead, you'll hear an odd warble when you push ChimeyGuitar too far. It's simi
 
 This is my go-to for articulate guitars and basses that don't seem to have saturation or distortion. It's got the flexibility of PointyGuitar, but super clean, or with strange new forms of saturation that are like derezzing. Hope you like it!
 
+############ ChimeyGuitar2 is a wilder ChimeyGuitar.
+
+This is the Latest chimeyguitar plugin, but it is not going to be in the Basic or Recommended categories, though in my heart it is definitely Recommended. Why? Because it's borderline dangerous. The amp can pop and explode when set incorrectly.
+
+Still here? OK, let's talk what's different this time. The original ChimeyGuitar used many instances of BeziComp to compress, which was mostly good at clamping down and compressing the signal. If you overcompress, you get an unpleasant warbling, and it didn't really react like traditional compressors. It's pretty safe and 'normal' even while not being normal. It didn't work great as ChimeyDeluxe, so I put a lot of work into developing a more intense version to use in ChimeyDeluxe, and that's what came out.
+
+An important difference is that ChimeyDeluxe is ten EQ-like controls with the compression built in. No extra boost, no dedicated compression control, no cab filters (I use the ones in ConsoleX2), so it's inherently restricted. ChimeyDeluxe can go wild, but that's when you're cranking the sliders around and making wild variations between adjacent sliders. It doesn't have… surprises.
+
+ChimeyGuitar2 is the raw material of that with the cab filter and an unrestricted compression-speed control and an even more unrestricted boost control… so if you wanted to turn specifically ChimeyDeluxe into a monster, here you go.
+
+Watch out for the boost: it will go up to total compressed squish, but if you push beyond that it can snap into a 'blown output stage' mode that kinda barks extra loud on the loudest notes. The filter section is much the same as ChimeyGuitar, as is the cab filtering. But, remember the gain staging of this plugin includes any gain boosts inside the filtering, It should behave any time the combined gains don't add up to infinite, but they multiply by each other so this is NOT a plugin for cranking things out carelessly. Think of it like a Dumble tube amp: go carefully and you won't hurt yourself, but it can scare you if you're careless.
+
+The compression speed is the key to a lot of interestingly messy tones. It's a different compression than the version in ChimeyGuitar, which just turns down and has that funny warbling effect when pushed. This one doesn't warble like that, but it includes makeup gain so infinite sustain is very possible, and if you do that with a fast (to the left) compression speed, you get a distinct distortion type, an edge on the tone that's very distortionlike. Pulling gain back or slowing (to the right) the compression speed moderates this effect, and slowing the speed a LOT is what you need to do to really avoid distorty qualities. That, and back off on the boost slider up top.
+
+But what fun is that? So, if you're going to embrace the wildness, dial in the gain with the speed set faster. Remember the EQ bands multiply with this. Once you're in the zone, tweak the compression speed to shape the voicing of the distorty stuff, and if gain is high enough and you're pushing the system hard enough, you can make the 'bark' touch responsive with very tiny adjustments right around the infinite compression point, right where it starts to bark and spark.
+
+Or you can always use a normal amp sim if this seems like too much trouble. A normal person wouldn't deal with this nonsense. I need to spend more time playing with it, because when I got reacquainted with ChimeyGuitar2 I immediately wanted to dial in all the twitchiest settings and play leads through it :)
+
 ############ Chorus is a mono chorus, also works as a vibrato.
 
 Here’s the start of some modulation plugins: Chorus will give you a nice basic mono chorusing effect, sweeping one moving delay tap against the dry signal. What makes it unusual is a pile of odd Airwindows things to adjust it this way and that.
@@ -1042,6 +1097,18 @@ ClipOnly2 is the heart of my mastering-grade clipping algorithm. Instead of tryi
 This produces a hard-clip suitable for safety clipper purposes, which is purely ‘bypass’ (plus a one sample delay to allow for the processing), with softer highs than you’d get from any pure hard-clip, no matter how oversampled. It’s an alternate technique, and is also pretty CPU-efficient.
 
 ClipOnly2 takes this principle and changes the ‘one sample’ to ‘the space of one sample at 44.1k’. Same tone, same ear-friendly approach to clipping extreme highs, except that now it’s effective at high sample rates. I’m demonstrating it and its predecessor at 96k, but ClipOnly2 is designed to work up to 700k or so, in case people get giddy with their newfound power :)
+
+############ ClipOnly3 is just plain stinkin' loud.
+
+Turns out you can go harder than ClipOnly2, through the power of noise!
+
+This plugin takes an idea currently rocking its way through bass music loudenation, the idea of covering up the sound of hardclipping through using noise, and runs in a completely different direction with it, to substantially upgrade ClipOnly while still not working quite the same as anything else.
+
+There's still the ClipOnly behavior of softening the onsets and exits from clipping. Still the total not-changing of any sample below the threshold. Still an ability to not add edgy digital glare to clipped highs like cymbals.
+
+But now, delicately clipped stuff gets a delicate tinge of noise. Hitting the clip harder begins to produce more noise… and then as you blow past that limit in turn, the noise gets replaced with purely hard clipping to a greater and greater extent, so that hyper-slamming restricts the noise part to only the onset and departure edges of the clips. And then there's an intersample peaking stage that was put in to deal with super-high-frequency test tones, which lets the maximum clip amplitude go insanely high without triggering analog peaking.
+
+So, like all ClipOnly, it's a tiny featureless plugin that will pass most audio untouched. It's just that when you slam it, there's practically no limit to what you can get away with. It's a clipper, so if you need a limiter this is probably not for you. But if you already knew you were going to be getting some clipping, or if your sounds mask it, or if you were just looking for total meltdown… have fun :)
 
 ############ ClipSoftly is ClipOnly2 but as a softclipper: a very handy building block.
 
@@ -1627,6 +1694,22 @@ This is different. I’m not sure it’s better but it’s different, and what i
 
 Enjoy the plugin if you like weird noise sources: again, might be sound design, maybe you’d like to gate it along with something? Gate it along with your snare and pick one of the midrangey settings and you might get a nice beefy reinforcement. Cranked way up, it gives a background noise ambience that’s like wind (heard from indoors, or being out in the wind) which can go from almost still, to thousands of miles an hour.
 
+############ Dattorro is the resonant lowpass filter out of Donut.
+
+Here's the filter out of Donut! This started as an experiment to see if I could code an SVF. That's a State Variable filter, and now that the other plugin makers have stopped laughing I'll tell you what it is :)
+
+Turns out a State Variable filter is about the simplest way you can do biquad-filter-like things (read: controllable and flexible) and plugin devs really like this one. That includes heavyweight genius devs like Andy from Cytomic who made The Glue and The Drop (Andy is a 'model every component' guy doing stuff I choose not to do, a rigorous circuit modeler). Dattorro is not that: Dattorro is me taking the concept of the state variable filter and doing Airwindowsy things with it.
+
+For instance, the frequency control's designed to go right up to the high frequency limit of the filter no matter what sample rate it's running under. It does this not by restricting the max frequency, but by altering the logarithm taper of the control so midrange frequencies will always be roughly in the middle of the control's travel. That means you never see exactly what frequency you're using, but neither do you see it on a 303 or x0xb0x and those are great, and this is very much a synth style filter.
+
+There's code for every kind of SVF inside Dattorro's source code, commented out, but the lowpass you get (and the resonant behavior, it has a great reso flavor) is not stock SVF, but airwindowsized. That's because I'm using a sin() function in there (for code simplicity. PurestSaturation would work just as well for this, or TapeHack) but not in the way you'd think. The obvious thing to do is put it on as a post clipper for simply adding distortion.
+
+But you know I'm always interested in anti-saturation, and so the softclip is going on the bandpass output… which is then SUBTRACTED from the lowpass (well, 0.5 of bandpass into sin() and then subtracted, I was working out what sounded best) and that's the filter. It's nearly as simple as the stock SVF but it sounds way, way slicker and that's what's in Donut and now here it is as a standalone filter for you.
+
+The sound is like the filtered-out part gets deeper and more vivid and interesting. Applying inverted saturation is like expansion: it's part of Dubly, and is like inverse Density, and is the buss section of every Console plugin in one way or another. It makes stuff sound farther away. Applying it to a synth filter in this way gives sonic depth and also a curious side-effect: the rolloff actually got shallower, even when it's resonant.
+
+This might be a clue towards something that could make a better Baxandall-style filter. I'll keep experimenting. Enjoy Dattorro :)
+
 ############ DCVoltage is literally a DC control voltage, in a plugin.
 
 This is exactly what it says on the tin. Do NOT just put this in a mix and crank it up to see what it’ll do. If your whole system is DC-coupled you will blow your woofers, just like that, after a big ‘whump’. I will not take responsibility for damage caused by misusing unusual tools.
@@ -1704,6 +1787,22 @@ Then you use the ducking control and the treble rolloff to tailor the kind of es
 ############ DeHiss tries to suppress background hiss, like a hiss gate.
 
 This acts like a filtery gate. It tries to apply a lowpass filter to suppress quiet background noise whenever loud bright treble isn’t happening. You can use it in creative ways, but it really was designed to suppress hiss from a cheap USB condenser mic. Sort of an experiment. It’s got a dry/wet now in case that comes in handy. I’m not sure how much else is out there specifically like this, but then I’m not sure how much call there is for it in the first place :)
+
+############ DeNoise can work as a multiband gate and as a wild effect.
+
+So it starts as a multiband gate. That's pretty direct. You've got frequency ranges, and when they're set to zero there's no gating and full wet is the same as dry. Turn up a band, and you're increasing the threshold: when the sound at that band drops below the threshold it gates and there's silence. You can use the dry/wet control to moderate the effect a little, and you can dial in settings that neatly denoise a sound without interfering with the main audio too much.
+
+The speed control governs how rapidly it transitions, and increasing that slows the reaction time, so you can keep the gate from chattering, set it as quick as possible without an obvious click and you're good. On top of that there's a trick from DeCrackle that's part of the dry/wet: the same as DeCrackle, if you set it full dry rather than just bypassing it, what you get is the delta function with dry subtracted from the result. This isn't the same as an inv/wet control so I didn't label it that: it's a special case for 'monitor only what's being taken away' which is sometimes handy for stuff like this.
+
+And now, we get freaky with it :)
+
+When you raise the gating a lot farther than mere noise gating, you get into some aggressive sound sculpting very quickly. Since it's a gate, you're shortening everything, but since it's multiband it can wrench the tone around. Instead of cutting low mids on the sound, you can gate them out super aggressively and it'll shorten and tighten up a kick, but keep the low mids as part of the attack: you're basically handling the decay of every part differently. You can have the bands blend across different settings, or have adjacent bands very different from each other, and all these things twist and mutate the tone.
+
+And then once you're doing that, the speed control comes into play. It governs both how fast the gate can slam shut, and how quick it can open, and that's also relative to the frequency of the band, so exaggerate this and you get filter-sweepy effects. Adjusting this can lock in exact gatey tones really well, it should be obvious where Speed wants to be set. And of course if that's not enough for you, you can make a tone entirely out of the Delta, where it loses all the attacks and keeps only the decays being gated off…
+
+And, it's one of the more CPU-efficient Airwindows plugins so it does all that while barely touching your CPU.
+
+It should be fun, as well as useful in the normal way. Hope you like it :)
 
 ############ Density is a Swiss Army Knife of saturation/antisaturation.
 
@@ -2068,6 +2167,24 @@ If you want to sink into the music like it was soup, if you think digital would 
 And there’s nothing else like it… and it’s yours. Enjoy :)
 
 Note: there is a more sophisticated version of this behavior in Airwindows Dark. The difference is, Dither Me Timbers only looks for a tiny micro-environment, within three samples. Dark extrapolates outward to work out which option will best make the WHOLE sound darker, not just a tiny three-sample area.
+
+############ Donut is in memory of Dilla.
+
+The main reason for this plugin is, one of my livestream people has wanted it for a long time. I'm hoping this brings him joy?
+
+Thing is, I've made a plugin in the SPIRIT of what I hear in Dilla, not a clone of a particular effect he may or may not have used on various things. And so, I believe this can be set up to do numerous things you've heard Dilla do… but also, I took pains to help it do other stuff I heard, and it kinda went on from there.
+
+This is basically an envelope follower. It's like my newest compressor plugin (as in, not out by itself yet but the one that's in ConsoleH and ConsoleX2), but instead of modulating volume, it modulates a lowpass filter. Except it's not just 'a lowpass filter', it's me trying out a very popular version of those filters known as a state variable filter, and doing some experiments with it which I don't know how common they are, but I loved the sound I got when I did them. The filter will come out by itself too, it's called Dattorro after the guy who wrote it into a textbook, and it's going to do interesting things like help me make a formant filter, later.
+
+But the way it works NOW is, you've got the compressor (a Bezier-filter compressor, so it doesn't have attack speed artifacts) with an attack speed that basically has it act like the original BeziComp, and then a release speed that lets you slow it right down. If you want to hear where it's at, you can turn the resonance up until it's basically just a wavering note.
+
+Then, there's a filter cutoff, a resonance control, and two more sliders just below those which modulate them according to the envelope, and that's it.
+
+If you put the filter in the middle, you can see that the modulator is at zero when in the center. So you can subtract the envelope, OR add it. Same with the resonance. My hope is that this can get you some neat effects, perhaps using Dilla-esque techniques like splitting the tracks and applying this real aggressively to only certain parts. In no way is it a 'push butan for dilla FX', my hope is that it's flexible enough to do a wide range of things with. Remember, if you use a very slow attack and fast release it's more of a BeziComp response, very wiggly.
+
+Part of what I found was that Dilla, I think, liked to run stuff into his Moog to process. Donut can do some of that: sweep it low and give it the right amount of resonance and it ought to resynthesize bass real well. It should handle automation nicely: state variable filters are better at that than, for instance, biquads. This is not the steepest of filters, but I set it up to have tone while reshaping things.
+
+I hope you like Donut! I have many things to put out but I can put out Dattorro too, if you like. That one comes with debugged versions of the original SVF code (which didn't work perfectly right out of the box, but has more options than I use here)
 
 ############ Doublelay is StereoDoubler with independent delays and feedback.
 
@@ -2476,6 +2593,22 @@ But, they change ‘angle’ at a sharp point which becomes sort of a corner in 
 And down near zero, it’s damn near total hard clipping. At silence, it literally is a hard clip to silence.
 
 Aw hell. Play with it, see what you think. i can’t explain this one well, at least not right now. The mad scientist labs have released another weird one. It will act like it’s a hard clip or a semi-dirty saturation, except the range of adjustment acts different, and it’ll throw an odd artifact on pure low-frequency tones… just play with it, see what you get. It will find its way into the combined plugin because it’s got a flavor all its own, but I can’t describe it today.
+
+############ FatEQ balances bands only with density.
+
+This experiment has always worked, but I'm not sure people understand why they gravitate to it.
+
+Usually when we do an EQ, we take frequency bands and turn them up and down, uniformly. A normal sound will get louder, a loud one louder still. Or, a sound will get quieter, a quieter sound quieter still.
+
+FatEQ uses the functions I use in Density (including an upgrade to negative Density settings) so that, if you're boosting, a normal sound will get louder, but a loud one will softclip. If you're cutting, to a certain extent a normal sound will get quieter but a quieter sound will get LOTS quieter. It uses variations on sin() functions to mess with the transfer functions in these ways that are tied to what you're doing with the slider.
+
+It's easy to hear what this does by just turning all the bands up. It's super-dense, overdriven, a multiband distortion, and you can totally do that.
+
+But as you do it, notice: doesn't everything also seem closer? That's the heart of FatEQ, more than its ability to just crank and overdrive stuff.
+
+The way these controls work, if you're making small adjustments you're not just making loudness changes. The softclips and antisaturations have the effect of moving sounds toward you, or farther away. Cutting any control to zero will totally remove that band, but smaller adjustments lean heavily into the 'we're attenuating the quiet detail/we're overdriving the loudest stuff'. As a result, you can EQ spatially: if you have unpleasant low-mids muddying things up, your adjustment can not only turn them down but make them step physically back. You can dial it in based on the sound coming into focus at a desired distance. Top-end too forward? Small adjustments to sit it at the position of the rest of the sound. Lows receding? Well, bring them right out until they're part of the instrument the way you wanted.
+
+It's a little unusual, but every time I've done anything like this, including just making EQ-like things that had saturation in 'em, people have loved the result. So, FatEQ just directly delivers what you might like in an EQ. See if it works out for you!
 
 ############ FathomFive is a way of supplementing extreme bass that’s not just EQ.
 
@@ -3505,6 +3638,18 @@ No effort is being made to emulate vintage digital reverb things. None. There's 
 It's a unique algorithm, generated to do just this, and it's there to merge with your vocal (or whatever else you wish) and sound like a hit record. Specifically, it wants to give you the richness and sumptuousness of Bowie circa Station To Station. You'll have to sing or it won't work, but this and perhaps some Silken (also a nice trick for that stuff) and you can get a giant head start.
 
 There'll be more, but this one is gonna come in real handy. I hope you like it :)
+
+############ kWoodRoom is a small wooden performing space.
+
+This concludes a series of plugin releases around Xmas and thereabouts! First there was ChimeyDeluxe, then ConsoleX2 with a bit of music to go along with it, and now the final shoe to drop is the unreleased reverb that was used to make what was seemingly a Dead show from 1972 or so!
+
+kWoodRoom was more stumbled upon than searched for. I'm continuing to pursue reverb things, doing better and better at delivering a really convincing virtual place to be in, but kWoodRoom popped up when searching for something else, and it's the last example of where my reverb work stood in 2025.
+
+It's got all the same controls as recent Airwindows reverbs, and it's the tone that is unusual. From the first instant I heard it I went 'oh hey a wood paneled room, that's weird'. It didn't seem special in any other way, didn't max out any of the things I was aiming for, but there it was, sounding like a thing. I've learned to pay attention to that, especially when there's no real explanation for it.
+
+That's because the reverbs I make search through hundreds of millions of possible delay time options to find optimal settings that balance many different requirements. They're purely Householder matrixes using comb filters alone, and relying upon matrix size to produce a smooth sound… unless I'm guiding them towards a rough sound, or a sound like a series of concrete arches, or what have you. I get to seek out all kinds of different qualities in the countless hours of computer time spent running genetic algorithms and permutations of delay lines.
+
+And then in the middle of all that, there'll be a kWoodRoom, more recognized than created. It just had a personality. Will it be a personality you like? I don't know, but if you give it a shot you will probably hear what it's like right away, and then it's up to you :)
 
 ############ LeadAmp is an amp sim with a clear, penetrating, vocal tone.
 
@@ -4916,6 +5061,20 @@ Slew3 uses ideas from Acceleration and DeBess to produce a slew clipping that’
 
 This is an experimental plugin. In development, some of my audio caused it to freak out, and it took extra time to get it to behave (I suppose I could also put out the freak-out version but for now let’s stay safe, OK?). It’s not quite linear or predictable (neither is real analog) and though I feel like it might have some very serious mojo to bring, I’m also interested in whether it dies given certain kinds of audio. I’m pretty sure I have it tamed to where it won’t do anything crazy, but is it really the silver bullet? I guess we’ll find out together.
 
+############ Slew4 is tape compression without the tape, for brightness control.
+
+You've heard of a cat without a grin and a grin without a cat, and you've heard of plenty of tape plugins without tape compression… but how about the compression without the tape?
+
+Slew4 does just one thing, but it does it incredibly well. It finds digital edges and glare and high frequency tizz, and it wipes out JUST that, to whatever extent you like, using new filtering ideas I don't think have been used before in this way. The Airwindows Slew plugins have long been a secret weapon for just this purpose, but this takes it completely beyond anything I had.
+
+That's why this is the technology in TapeHack2, and what got included in ConsoleH and ConsoleX2 as hasty updates soon after they came out, and why it's a significant part of ToTape9 which I'm doing everything I can to finish up. Now it's there for you to use and control, without any sort of saturation stage or any other sort of tape modeling, in its purest possible form.
+
+One thing that means is, if your sound isn't bright enough, there is no chance you'll ever hear it do anything. With the right kind of vocal track this is a de-esser all by itself. For other vocal tracks, even ones with pronounced esses, you'll find it does absolutely nothing. It ONLY cares about the very highest highs, and excises them so neatly you'd never know they were there.
+
+Slew4 runs two samples of lookahead to do what it does, and makes its filter by stacking up averaging filters with even numbers of samples in them. These produce stopbands with big cancellation nodes in them, but when you stack them up, each new cancellation node targets a bump (between nodes) from the previous one… so it becomes a very steep roll-off with good filtering past the cutoff, and no pre-ripple meaning it has incredible time domain performance for something that steep. The strangeness of the stop-band response is probably why this wouldn't have found use before, but it turns out to sound fantastic, especially when it's just reining in the highest highs without touching anything else.
+
+If you liked TapeHack2, you already like this! Enjoy playing with it as a dedicated brightness tamer :)
+
 ############ SlewOnly is a mix check plugin that shows you only the extreme highs.
 
 By request, here’s my mix monitoring tools, for VST and Audio Unit, Mac and PC! Please remember, these like Guitar Conditioner are control-less plugins so you don’t operate them by opening their windows: they’re either on or off, which probably is shown in your DAW mixer window already.
@@ -5400,6 +5559,24 @@ The only thing Sweeten can do that you can't already do with Inflamer is be simp
 
 I'll be using it: if anybody else finds it useful, that's even better :)
 
+############ SweetWide is a strange grungy stereo widener.
+
+It's experiment time! This is a really good example of the sort of thing I do for Airwindows, and for the folks out there.
+
+You may well find this horrible, lame and useless. That is OK, it's not going to be for everybody.
+
+But if you like the sort of weird grunge this produces, we're talking signature sound, secret weapon town, bigtime… and NOBODY else will be bringing it, and no AI will arrive at this unless literally told to copy it (in which case they should credit and say it's SweetWide they're using).
+
+This plugin comes not from the world of Srsly or EdIsDim or Wider (plenty of other things I've made to do stereo widening nicely). It comes from my experiments with ring modulation. It's really a very simple algorithm though it does use square root functions: that's next to nothing, as far as CPU is concerned. It's doing terrible things to the stereo signal coming in, for the purpose of exaggerating side-channel information, but in a way where it's tending to produce asymmetric modulations. That's more along the lines of 'second harmonic, fourth harmonic etc' rather than 'third harmonic and normal distortion', and that's why Sweet is part of the name: we tend to hear even harmonics as more 'sweet' than odd harmonics.
+
+Even then it's not acting normal because it's using that Soar control to govern how the square-root reacts to subtle sounds. It serves the purpose of bringing up a gnarly compressey grunginess, except for stereo widening. If you crank it out all the way it's very obvious, but you can dial the Soar setting in that way, and then pull it back if you'd like it to still be unique but not so obnoxious.
+
+It'll also do a stereo narrowing effect that's maybe even more obnoxious, by turning Un/Wide all the way to Un. It's basically the same thing as an Inv/Dry/Wet control. The whole thing runs without any stored variables, and the setup of controls is hilariously trivial: without the square roots it'd be about the most CPU-efficient plugin you have.
+
+The reason you don't have this already is, it sounds terrible. But it's terrible in kind of a wonderful way. I demonstrate it on a full mix, and you should never use it on a full mix. Instead, I think it'd be a great widener on a heavy guitar buss, or certain synth tones, or maybe it's a really interesting way to narrow a drum room sound and bring a lot of grungey color to things. Any sound you can get from it, you can tune with the Soar control. I've managed to bring the totally weird Soar control from my ring modulators to a stereo widener/narrower, in case that's handy.
+
+If this is the plugin for you, you've probably already started throwing it on things and enjoying its unique gnarly space-distortions, and if this isn't the plugin for you, I don't know how much more clearly I can warn you. You're welcome :)
+
 ############ Swell is Dial-an-attack, like sidechaining.
 
 Every now and then you come up with something a little different. The fun of that is in identifying it.
@@ -5550,7 +5727,6 @@ The reason this is interesting is, that tone control is completely bizarre. It�
 
 You can hear it on the video, which has a number of things updated, not least this: the new audio is directly captured analog sorta-house music out of my livestreams. This way you ought to be able to really hear the way my plugins retain analog qualities, because now the demo music is essentially AAD: not products of other DAW mixes or digital synthesis, but source material.
 
-
 ############ TapeHack is a new dimension in tape realism, abstracted to software.
 
 It started with a paper by Spencer Walters, on this subject: what's the role of hysteresis in magnetic tape recording? We tend to assume that's fine, we're making it linear, apart from all the soft saturation of course. Even then, that's not quite where it starts: it's research on Dolby HX-Pro that got Spencer thinking. I'm not sure the Dolby people quite understood the implications of what they had, as that was an era of 'remove all distortions'.
@@ -5574,6 +5750,38 @@ A side note: I've posted classic vinyl records and measured them, tracking peak 
 There will be more about this: and yeah, Spencer's aware of what I'm doing and cool with it. In fact he'd like to know if my testimonial (in his thread on the matter) can go on his website. My work on TapeHack suggested to me that he's really on to something with this, I'm happy to say so, and my more abstracted version is something we can all enjoy. (oh: it's also perfectly suited to oversampling for folks with something like Reaper where you can just do that. I won't be, because I think it gains more from the immediacy of direct processing than you lose from what little aliasing it'll produce)
 
 I'll be saving up for the hardware Spencer makes, and I'll be using what I learned in TapeHack for many things. Hope you like it!
+
+############ TapeHack2 brings Airwindows tape to a new level.
+
+Two wrongs may not make a right… but sometimes, two goofy hacks might make a better 'tape compression' than having a real tape machine.
+
+So hear me out, because this one went some strange places, and, well, listen to it ;)
+
+The original TapeHack was a pretty big deal, went over real well, in spite of the fact that there was nothing to it but a software 'transfer function'. It's literally nothing but a 'vaguely sinelike softclip' with special characteristics. Everything about it was made to shift the 'saturation' upwards in dB and lean out the middle part a bit, in accordance to how real tape turns out to work. I'm of course not alone in figuring this stuff out, I'm just the one trying to doctor softclip algorithms to do it. That part worked great, and because it's a softclip, it even sounds a lot like 'tape compression', certainly more than anything I'd had before.
+
+There's tests you can do to determine whether your tape biasing and the amount of your ultrasonic energy is high enough to saturate things to produce real-deal, genuine 'tape compression' of highs. And it really is true that you don't have to use literal tape machines to do that anymore. I would go so far to say that is the new bar to reach: nobody's going to duplicate that short of simulating the whole apparatus at a megahertz or something, and this I am not going to do: I already didn't like oversampling, and it seems wasteful.
+
+But what if, on top of faking the 'bias tone bridging the gap between magnetic coercivity' through just doctoring a softclip to do it (wrong, but it worked), I instead just came up with a new sort of filter that was very free of typical sharp-filter irregularities… and modulated that at audio rates, in an attempt to not let the signal do high frequencies beyond too much of a slew rate?
+
+Meet TapeHack2. If you've downloaded ConsoleH or ConsoleX2 in the last day or two, you have already met it, because it worked so well I had to include it in the 'More' fat-boost section of those plugins. My video for TapeHack2 demonstrates why, showing the original mix, the subtly but intensely better mix where nothing has been changed but swapping in the TapeHack2 algorithm for the original, and lastly the delta function showing HOW much aliasing and untapelike brightness was fluidly removed from just the parts of the mix hitting More hard. It was so strong it affected the buss compression enough to bring in totally unrelated elements like bass, just by altering how More handled supersonic highs in the 96k mix.
+
+Functionally, this is the 'tape compression of highs' effect. Is it a clone, or emulation? AW HELL no, not even slightly. It's totally different, measurably, observably different, not like a tape at all, but now it does two tape behaviors as hard as it can. Run sine sweeps into it if you want to see how different it is, how crazy it'll act. It's a HACK, doesn't have anything to do with analog anything really.
+
+So what is happening?
+
+It's running a stack of filters. They're very efficient: they're stacked-up averaging filters. These are very good in the time domain, don't do pre-rings or weird filter ripples, but the cost is if you just use a simple averaging of a bunch of samples in a row, you get massive notches and odd peaks in the response. They are awful at being accurate good filters.
+
+But, turns out if you stack them up right you can have the notch of one overlap the peak of another, and get a really steep roll-off with good time behavior where the rolloff is so steep you hardly mind the funny added peaks and response issues. It basically goes 'ok, very smooth natural super rolloff NOW' and then rather than needing to work over an enormous window, and have a huge filter ripple (for linear phase) it just does the thing and gets out of the way. You trade off the accuracy of the 'curve' for just 'make the highs be gone, completely!'. I've got a filter plugin coming, Slew4, that's an expanded version of this.
+
+That's not 'tape compression', though. Tape compression is when you let the raw signal through, but track how sharp a departure the new sound is from whatever the filtering was doing last sample. Instead of just tracking the slew of the input signal and working with that, you barely touch the sound unless the new sample is gonna be really far from where the last output was, even if that's the result of filtering… and that is why it acts like compressing, there's a point beyond which highs can't get louder and you can't force them. It's not even on a time constant, it's just 'nope'.
+
+And is this the point at which the filtering prevents aliasing from happening? NOPE. It absolutely still aliases, and I'll tell you why. In setting it up, I got this part working and then tried to find the point at which I prevented all aliasing. It didn't want to. It's not an oversampling: it's still raw, still running fully at whatever sample rate you're using, still producing 'semi-valid' information including above where the apparent tape compression kicks in.
+
+It's just that the way this thing works, when set up to sound its best, it's not reducing superhigh sine waves to silence above a certain frequency. It's changing them into quieter triangle waves instead. Along the way, if you're doing intense saturation and making the wave flat-top, it turns it into sort of trapezoids in the manner that big square waves on analog gear turn into slanted-topped, altered waves. So basically what I'm saying is it does the weirdest waveshaping I've ever seen, with all the very highest frequency stuff, in such a way that it's arguably sharpening the frequencies while also attenuating and suppressing them. And it's all off a filter (set of filters) that is very free of ripple and resonant qualities.
+
+This, applied to real music, sounds pretty amazing, and it's going to find its way into a new ToTape, as well as my trusty TapeDelay plugin, and it is already in ConsoleH and ConsoleX2. And honest, it's the farthest thing from emulating anything, much less real tape. But my interest is never in trying to duplicate a thing: digital is not good at that, something dies when you overprocess. Instead, TapeHack2 is about bringing very minimalist, very unusual sorts of processing to achieve a result, which in this case is 'softclip like a tape, but ALSO stop highs from getting louder, also like a tape, except you're not remotely a tape'.
+
+Have fun with this one, I know I'm going to be enjoying the results of it a whole lot :)
 
 ############ Texturize is a hidden-noise plugin for adding sonic texture to things.
 
@@ -5702,6 +5910,22 @@ With no tape noise, what does the new Dubly do? Amazing things. Now that it does
 Does that mean setting it to neutral does nothing? Nope, this is the best part. Just by being there, Dubly does a special thing with the ToTape overdrive/saturation. It cancels harmonics, and this is why real tape machines are often thought of as near-magical 'clean level compressors'. ToTape8 pulls this off pretty well, even though it's minimal and clean enough to use in real audio work (not just sound design). Note that this is not 'aliasing control' though it'll sound like it is, compared to the gritty ToTape7 (vibey though it is). ToTape8 does use filtering in both the Dubly encode and decode, but not in an 'elaborate brickwall filter because it thinks it is oversampling' way, in a way that's designed for better tone and ability to run at zero latency. What's happening is, the nature of Dubly means anything producing harmonics tends to also have the harmonics taken back out again, because they're treated as additional noise. It's that simple, and still works in minimal form in spite of not cloning any hardware box, and that's why ToTape8 gets the sound it does.
 
 That's the new stuff, Flutter and Bias and Head Bump and Head Bump Frequency still work the way they do in ToTape7. I think they'll be even easier and more pleasing to work with now that the Dubly stuff has been brought up to par. Let me know if this plugin sounds better than ToTape7. It ought to :)
+
+############ ToTape9 is Airwindows tape emulation and brightness compression.
+
+ToTape is one of the most successful plugins I've ever had. Step by step, it's come along and incorporated more and more things, but always in an original way. It picked up flutter, bias, Dubly, and then adapted all these things to the needs of the musician. So if you don't know how to calibrate Dubly units for heavy music, you have a Tilt that will give you more of a leaning towards brightness, or darkness… but it's implemented via the Dubly controls so it acts like adjustments on a tape machine. Shape works likewise, going for either more old-school sonority or more big-studio chill. Flutter behaves itself unless you don't want it to, and the input and output controls make it very simple to manage ToTape9's gain staging, for gentle use or aggressive slam.
+
+But then the heart of ToTape is completely replaced by what I learned making TapeHack2, itself a giant leap over the original TapeHack, which was itself a huge discovery. When I tried this in the guts of ToTape I was just completely shocked by how huge it sounded. The scale of the sound put the previous version to shame. You do not have to slam this to have it sound amazing, but if slamming's your thing I think this will bring delight and joy.
+
+And then it's topped off by not the latest ClipOnly… but the NEXT ClipOnly. The one where I ran with the concept, not completely unlike my old Chrome Oxide plugin but in a new perspective, of 'dithering aliasing'. It turns out you can't actually dither aliasing but there's a large number of interesting effects you can produce by noising up clipping. So when I experimented, I ended up applying it in a way nobody else was doing, introducing noise just faintly as clipping begins to happen, ramping it up, and then as hard clipping takes over, shifting it to the 'edge samples' akin to what ClipOnly and ClipOnly2 have always done, meaning the noise goes back away again (and is never all that loud: sorry, no special FX here)
+
+And combining this with the existing ClipOnly2 created a monster.
+
+So that's what's on the end of ToTape9. Output at 0.5 means you're just barely bumping this final clip stage. Boost it and you're hitting the output clip harder, cut it back and it's purely the ToTape section. I would imagine mostly leaving it at 0.5 is what most people will do, but it's yours to experiment with. It produces a 'beyond tape slam' that is shockingly big and deep and loud, it applies its work only when clipping is actively happening, it's all within a very tiny amplitude window so it stays clean on most everything, and it gracefully handles Gibbs effect overslew (intersample clipping) without ever applying upsampling or downsampling, so the sound is aggressive and raw the way I like my tape effects to be.
+
+Try ToTape9. It's the most intensely tapey plugin I've ever done, with new abilities like the ability to soak up highs like the real thing. It's got all the little details you could ask of a no-compromises real tape model, but adapted to musical purposes so you can think 'tilt towards more brightness' rather than 'should I go with a 355 nanoWebers per meter calibration'. And it's got the most killer output clip stage I've ever made, just to let you use it as a kind of loudness maximizer right out of the box.
+
+I hope this brightens your day :)
 
 ############ ToVinyl4 is a vinyl-mastering simulator bringing several vinyl-type colors.
 
@@ -6299,6 +6523,25 @@ This is NOT like a sampler model. It’s a whole other algorithm, putting weird 
 
 And then either soften or sharpen the hell out of the edge, to get tones that don’t really exist anywhere else. This is the alternate version of YNotch, except without control smoothing. That means it'll be slightly less CPU-hungry, and might be preferable for situations like use in VCV Rack at very small buffer sizes. So, use YNotNotch if you'd like slightly more CPU efficiency, if you run tiny buffers, if you are using it as a fixed filter sound, or if you want that 'neuro' glitchy zipper-noise sound, at which it'll be really good since it already has an aggressively unnatural filter tone :)
 
+############ ZAcidLowpass is like if an e6400 went insane and grew shark teeth.
+
+Okay, next week we can get normal :)
+
+This algorithm is less than a week old. It's what happened when I tried to extend my Quadratic Bezier Curve audio processing to Cubic Bezier Curve audio processing. And I'm not sure it's time to give up on that, but in the meantime, the experiment failed spectacularly.
+
+So, generating curves can follow various rules. The quadratic bezier curves are already breaking audio rules, as what they do has nothing to do with frequencies, or harmonics, or any audio concepts. They're drawing a continuous curve directed by the sample values and it turned out this is possible, but it doesn't have audio significance. It's quite good at handling control voltages, like in a compressor! But it's still kind of arbitrary, constructing a curve from the starting position of a previous sample.
+
+The cubic bezier curves proved much less manageable.
+
+In theory, you could get interesting results out of them since you get two independent control points, but it turned out weirder: there's this tendency to draw the curves, indeed make them be interesting curves with striking contours, but then jump around in the reconstruction. It'd not-randomly space out the curves with tiny straight lines like a sawtooth wave gone mad. Very pretty but never joining up the waves into something smooth and connected. The idea was to see where the extra control point took the reconstruction, but at least for now it took the reconstruction to crazy-town.
+
+And produced a horrible hybrid of a steep resonant ringy filter, and a ring modulator, and I don't know what else. I never heard anything like that, and so there was only one thing to do.
+
+Put the Z filters output stage on it so you could distort it wildly, and let people have it. What else?
+
+The cutoff is roughly what you'd expect, a frequency control. Over gives you highpassing, under gives you lowpassing, both gives you the original sound (this is a sort of crossover! somehow!). Meltdown does a specific thing: rather than feeding the filter with an averaged, darker input, you can feed it with the raw audio input and get aliasing and chaos fed into the points and control voltages, and this sounds wilder and dirtier. If you're using Over to produce highpassing, Meltdown is reversed, and setting it to 0 gives you the crazy overtones and harsh noises. Drive is like the other Z filters, and so is Output, and the distortion stage is the same as in the Z filters, so if you're using those and would like a contrast that's still tonally similar, this is the plugin for you.
+
+They can't all be ToTape9 :) if this suits you, have fun!
 
 ############ ZBandpass is a bandpass made to sound and act like the Emu e6400 Ultra bandpass.
 
@@ -6424,7 +6667,7 @@ ZRegion is that filter. The original Airwindows Region wasn't written in the con
 
 The reason I might be needing this one is, I can get pretty killer bass tones using it. I'll set the first filter higher for midrange articulation, set the last filter very low for heavy bass mojo, and it's instantly a bass-amp type of sound. And if I intend to leave the setting as a fixed setting, ZRegion will give me that with the same flavor as my other Z filters.
 
-But if I want to automate or move the controls as part of the mix…
+But if I want to automate or move the controls as part of the mix… see ZRegion2.
 
 ############ ZRegion2 is an Emu e6400 style Airwindows Region filter, with coefficient smoothing.
 
