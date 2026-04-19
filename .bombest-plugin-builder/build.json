@@ -1,0 +1,17 @@
+{
+  "plugin_name": "airwindows",
+  "plugin_formats": "AU,VST2",
+  "build_dir": "../build",
+  "cmake_generator": "Unix Makefiles",
+  "cmake_extra_args": "",
+  "signing_identity_adhoc": "-",
+  "signing_identity": "",
+  "apple_id": "",
+  "team_id": "",
+  "notarization_keychain_profile": "",
+  "s3_bucket": "bombest-releases",
+  "s3_region": "us-east-1",
+  "site_url": "",
+  "au_script": "scripts/build_all_au.sh",
+  "installer_script": "scripts/create_installer.sh"
+}

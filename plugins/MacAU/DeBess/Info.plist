@@ -24,5 +24,26 @@
 	<string>1.0</string>
 	<key>CSResourcesFileMapped</key>
 	<true/>
+	<key>AudioComponentBundle</key>
+	<string>com.airwindows.audiounit.${PRODUCT_NAME:identifier}</string>
+	<key>AudioComponents</key>
+	<array>
+		<dict>
+			<key>type</key>
+			<string>aufx</string>
+			<key>subtype</key>
+			<string>debs</string>
+			<key>manufacturer</key>
+			<string>Dthr</string>
+			<key>name</key>
+			<string>Airwindows: DeBess</string>
+			<key>description</key>
+			<string>DeBess AU</string>
+			<key>version</key>
+			<integer>65536</integer>
+			<key>factoryFunction</key>
+			<string>DeBessFactory</string>
+		</dict>
+	</array>
 </dict>
 </plist>
