@@ -1,0 +1,75 @@
+name: Sync upstream and update docs
+
+on:
+  schedule:
+    # Every Monday at 06:00 UTC
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Add upstream remote and fetch
+        run: |
+          git remote add upstream https://github.com/airwindows/airwindows.git
+          git fetch upstream master
+
+      - name: Check for upstream changes
+        id: upstream_check
+        run: |
+          BEHIND=$(git rev-list HEAD..upstream/master --count)
+          echo "behind=$BEHIND" >> $GITHUB_OUTPUT
+          echo "Commits behind upstream: $BEHIND"
+
+      - name: Merge upstream into master
+        if: steps.upstream_check.outputs.behind != '0'
+        run: |
+          git merge upstream/master --no-edit --strategy-option=theirs \
+            -m "chore: sync upstream airwindows/airwindows"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Update plugins.json
+        run: python3 add_missing_plugins.py
+
+      - name: Regenerate plugin-index.json
+        run: python3 skills/airwindows-expert/scripts/extract-plugin-metadata.py
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git add docs/data/plugins.json skills/airwindows-expert/references/plugin-index.json
+          if git diff --cached --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit doc updates
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git commit -m "chore(docs): regenerate plugins.json and plugin-index.json"
+
+      - name: Push to master
+        if: steps.upstream_check.outputs.behind != '0' || steps.changes.outputs.changed == 'true'
+        run: git push origin master
