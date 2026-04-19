@@ -5,7 +5,7 @@
 * 
 *	Created:	9/9/19
 *	
-*	Copyright:  Copyright © 2019 Airwindows, Airwindows uses the MIT license
+*	Copyright:  Copyright ? 2019 Airwindows, Airwindows uses the MIT license
 * 
 *	Disclaimer:	IMPORTANT:  This Apple software is supplied to you by Apple Computer, Inc. ("Apple") in 
 *				consideration of your agreement to the following terms, and your use, installation, modification 
@@ -44,6 +44,7 @@
 	
 =============================================================================*/
 #include "DeBess.h"
+#include "ComponentBase.h"
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -75,7 +76,7 @@ DeBess::DeBess(AudioUnit component)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //	DeBess::GetParameterValueStrings
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-ComponentResult			DeBess::GetParameterValueStrings(AudioUnitScope		inScope,
+OSStatus			DeBess::GetParameterValueStrings(AudioUnitScope		inScope,
                                                                 AudioUnitParameterID	inParameterID,
                                                                 CFArrayRef *		outStrings)
 {
@@ -88,11 +89,11 @@ ComponentResult			DeBess::GetParameterValueStrings(AudioUnitScope		inScope,
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //	DeBess::GetParameterInfo
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-ComponentResult			DeBess::GetParameterInfo(AudioUnitScope		inScope,
+OSStatus			DeBess::GetParameterInfo(AudioUnitScope		inScope,
                                                         AudioUnitParameterID	inParameterID,
                                                         AudioUnitParameterInfo	&outParameterInfo )
 {
-	ComponentResult result = noErr;
+	OSStatus result = noErr;
 
 	outParameterInfo.flags = 	kAudioUnitParameterFlag_IsWritable
 						|		kAudioUnitParameterFlag_IsReadable;
@@ -151,7 +152,7 @@ ComponentResult			DeBess::GetParameterInfo(AudioUnitScope		inScope,
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //	DeBess::GetPropertyInfo
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-ComponentResult			DeBess::GetPropertyInfo (AudioUnitPropertyID	inID,
+OSStatus			DeBess::GetPropertyInfo (AudioUnitPropertyID	inID,
                                                         AudioUnitScope		inScope,
                                                         AudioUnitElement	inElement,
                                                         UInt32 &		outDataSize,
@@ -163,7 +164,7 @@ ComponentResult			DeBess::GetPropertyInfo (AudioUnitPropertyID	inID,
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //	DeBess::GetProperty
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-ComponentResult			DeBess::GetProperty(	AudioUnitPropertyID inID,
+OSStatus			DeBess::GetProperty(	AudioUnitPropertyID inID,
                                                         AudioUnitScope 		inScope,
                                                         AudioUnitElement 	inElement,
                                                         void *			outData )
@@ -173,9 +174,9 @@ ComponentResult			DeBess::GetProperty(	AudioUnitPropertyID inID,
 
 //	DeBess::Initialize
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-ComponentResult DeBess::Initialize()
+OSStatus DeBess::Initialize()
 {
-    ComponentResult result = AUEffectBase::Initialize();
+    OSStatus result = AUEffectBase::Initialize();
     if (result == noErr)
         Reset(kAudioUnitScope_Global, 0);
     return result;

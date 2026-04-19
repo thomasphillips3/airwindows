@@ -5,7 +5,7 @@
 * 
 *	Created:	9/9/19
 *	
-*	Copyright:  Copyright © 2019 Airwindows, Airwindows uses the MIT license
+*	Copyright:  Copyright ï¿½ 2019 Airwindows, Airwindows uses the MIT license
 * 
 *	Disclaimer:	IMPORTANT:  This Apple software is supplied to you by Apple Computer, Inc. ("Apple") in 
 *				consideration of your agreement to the following terms, and your use, installation, modification 
@@ -88,32 +88,32 @@ public:
 	
 	virtual AUKernelBase *		NewKernel() { return new DeBessKernel(this); }
 	
-	virtual	ComponentResult		GetParameterValueStrings(AudioUnitScope			inScope,
+	virtual	OSStatus		GetParameterValueStrings(AudioUnitScope			inScope,
 														 AudioUnitParameterID		inParameterID,
 														 CFArrayRef *			outStrings);
     
-	virtual	ComponentResult		GetParameterInfo(AudioUnitScope			inScope,
+	virtual	OSStatus		GetParameterInfo(AudioUnitScope			inScope,
 												 AudioUnitParameterID	inParameterID,
 												 AudioUnitParameterInfo	&outParameterInfo);
     
-	virtual ComponentResult		GetPropertyInfo(AudioUnitPropertyID		inID,
+	virtual OSStatus		GetPropertyInfo(AudioUnitPropertyID		inID,
 												AudioUnitScope			inScope,
 												AudioUnitElement		inElement,
 												UInt32 &			outDataSize,
 												Boolean	&			outWritable );
 	
-	virtual ComponentResult		GetProperty(AudioUnitPropertyID inID,
+	virtual OSStatus		GetProperty(AudioUnitPropertyID inID,
 											AudioUnitScope 		inScope,
 											AudioUnitElement 		inElement,
 											void *			outData);
 	
-	virtual ComponentResult    Initialize();
+	virtual OSStatus    Initialize();
 	virtual bool				SupportsTail () { return true; }
     virtual Float64				GetTailTime() {return (1.0/GetSampleRate())*0.0;} //in SECONDS! gsr * a number = in samples
     virtual Float64				GetLatency() {return (1.0/GetSampleRate())*0.0;}	// in SECONDS! gsr * a number = in samples
 	
 	/*! @method Version */
-	virtual ComponentResult		Version() { return kDeBessVersion; }
+	virtual OSStatus		Version() { return kDeBessVersion; }
 	
     
 	

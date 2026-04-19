@@ -10,13 +10,14 @@
 		3EEA126E089847F5002C6BFC /* CAVectorUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3EEA126B089847F5002C6BFC /* CAVectorUnit.cpp */; };
 		3EEA126F089847F5002C6BFC /* CAVectorUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EEA126C089847F5002C6BFC /* CAVectorUnit.h */; };
 		3EEA1270089847F5002C6BFC /* CAVectorUnitTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EEA126D089847F5002C6BFC /* CAVectorUnitTypes.h */; };
-		8B4119B70749654200361ABE /* DeBess.r in Rez */ = {isa = PBXBuildFile; fileRef = 8BA05A680720730100365D66 /* DeBess.r */; };
 		8BA05A6B0720730100365D66 /* DeBess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA05A660720730100365D66 /* DeBess.cpp */; };
 		8BA05A6E0720730100365D66 /* DeBessVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA05A690720730100365D66 /* DeBessVersion.h */; };
 		8BA05AAE072073D300365D66 /* AUBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA05A7F072073D200365D66 /* AUBase.cpp */; };
 		8BA05AAF072073D300365D66 /* AUBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA05A80072073D200365D66 /* AUBase.h */; };
 		8BA05AB0072073D300365D66 /* AUDispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA05A81072073D200365D66 /* AUDispatch.cpp */; };
 		8BA05AB1072073D300365D66 /* AUDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA05A82072073D200365D66 /* AUDispatch.h */; };
+		F7C347F20ECE5AF8008ADFB6 /* AUPlugInDispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7C347F40ECE5AF8008ADFB6 /* AUPlugInDispatch.cpp */; };
+		F7C347F30ECE5AF8008ADFB6 /* AUPlugInDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = F7C347F50ECE5AF8008ADFB6 /* AUPlugInDispatch.h */; };
 		8BA05AB2072073D300365D66 /* AUInputElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA05A83072073D200365D66 /* AUInputElement.cpp */; };
 		8BA05AB3072073D300365D66 /* AUInputElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA05A84072073D200365D66 /* AUInputElement.h */; };
 		8BA05AB4072073D300365D66 /* AUOutputElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA05A85072073D200365D66 /* AUOutputElement.cpp */; };
@@ -29,8 +30,6 @@
 		8BA05AC7072073D300365D66 /* AUEffectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA05A9B072073D200365D66 /* AUEffectBase.h */; };
 		8BA05AD2072073D300365D66 /* AUBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA05AA7072073D200365D66 /* AUBuffer.cpp */; };
 		8BA05AD3072073D300365D66 /* AUBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA05AA8072073D200365D66 /* AUBuffer.h */; };
-		8BA05AD4072073D300365D66 /* AUDebugDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BA05AA9072073D200365D66 /* AUDebugDispatcher.cpp */; };
-		8BA05AD5072073D300365D66 /* AUDebugDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA05AAA072073D200365D66 /* AUDebugDispatcher.h */; };
 		8BA05AD6072073D300365D66 /* AUInputFormatConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA05AAB072073D200365D66 /* AUInputFormatConverter.h */; };
 		8BA05AD7072073D300365D66 /* AUSilentTimeout.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA05AAC072073D200365D66 /* AUSilentTimeout.h */; };
 		8BA05AD8072073D300365D66 /* AUTimestampGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA05AAD072073D200365D66 /* AUTimestampGenerator.h */; };
@@ -65,6 +64,8 @@
 		8BA05A80072073D200365D66 /* AUBase.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AUBase.h; sourceTree = "<group>"; };
 		8BA05A81072073D200365D66 /* AUDispatch.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AUDispatch.cpp; sourceTree = "<group>"; };
 		8BA05A82072073D200365D66 /* AUDispatch.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AUDispatch.h; sourceTree = "<group>"; };
+		F7C347F40ECE5AF8008ADFB6 /* AUPlugInDispatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AUPlugInDispatch.cpp; sourceTree = "<group>"; };
+		F7C347F50ECE5AF8008ADFB6 /* AUPlugInDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUPlugInDispatch.h; sourceTree = "<group>"; };
 		8BA05A83072073D200365D66 /* AUInputElement.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AUInputElement.cpp; sourceTree = "<group>"; };
 		8BA05A84072073D200365D66 /* AUInputElement.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AUInputElement.h; sourceTree = "<group>"; };
 		8BA05A85072073D200365D66 /* AUOutputElement.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AUOutputElement.cpp; sourceTree = "<group>"; };
@@ -78,8 +79,6 @@
 		8BA05A9B072073D200365D66 /* AUEffectBase.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AUEffectBase.h; sourceTree = "<group>"; };
 		8BA05AA7072073D200365D66 /* AUBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AUBuffer.cpp; sourceTree = "<group>"; };
 		8BA05AA8072073D200365D66 /* AUBuffer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AUBuffer.h; sourceTree = "<group>"; };
-		8BA05AA9072073D200365D66 /* AUDebugDispatcher.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AUDebugDispatcher.cpp; sourceTree = "<group>"; };
-		8BA05AAA072073D200365D66 /* AUDebugDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AUDebugDispatcher.h; sourceTree = "<group>"; };
 		8BA05AAB072073D200365D66 /* AUInputFormatConverter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AUInputFormatConverter.h; sourceTree = "<group>"; };
 		8BA05AAC072073D200365D66 /* AUSilentTimeout.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AUSilentTimeout.h; sourceTree = "<group>"; };
 		8BA05AAD072073D200365D66 /* AUTimestampGenerator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AUTimestampGenerator.h; sourceTree = "<group>"; };
@@ -97,8 +96,8 @@
 		8BC6025B073B072D006C4272 /* DeBess.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DeBess.h; sourceTree = "<group>"; };
 		8D01CCD10486CAD60068D4B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D01CCD20486CAD60068D4B7 /* DeBess.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeBess.component; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7C347EE0ECE5AF8008ADFB6 /* AUBaseHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AUBaseHelper.cpp; path = Extras/CoreAudio/AudioUnits/AUPublic/Utility/AUBaseHelper.cpp; sourceTree = SYSTEM_DEVELOPER_DIR; };
-		F7C347EF0ECE5AF8008ADFB6 /* AUBaseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AUBaseHelper.h; path = Extras/CoreAudio/AudioUnits/AUPublic/Utility/AUBaseHelper.h; sourceTree = SYSTEM_DEVELOPER_DIR; };
+		F7C347EE0ECE5AF8008ADFB6 /* AUBaseHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AUBaseHelper.cpp; path = AUBaseHelper.cpp; sourceTree = "<group>"; };
+		F7C347EF0ECE5AF8008ADFB6 /* AUBaseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AUBaseHelper.h; path = AUBaseHelper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,8 +183,8 @@
 				8BA05AA6072073D200365D66 /* Utility */,
 			);
 			name = AUPublic;
-			path = Extras/CoreAudio/AudioUnits/AUPublic;
-			sourceTree = SYSTEM_DEVELOPER_DIR;
+			path = ../AppleCoreAudioUtilityClasses/CoreAudio/AudioUnits/AUPublic;
+			sourceTree = "<group>";
 		};
 		8BA05A7E072073D200365D66 /* AUBase */ = {
 			isa = PBXGroup;
@@ -194,6 +193,8 @@
 				8BA05A80072073D200365D66 /* AUBase.h */,
 				8BA05A81072073D200365D66 /* AUDispatch.cpp */,
 				8BA05A82072073D200365D66 /* AUDispatch.h */,
+				F7C347F40ECE5AF8008ADFB6 /* AUPlugInDispatch.cpp */,
+				F7C347F50ECE5AF8008ADFB6 /* AUPlugInDispatch.h */,
 				8BA05A83072073D200365D66 /* AUInputElement.cpp */,
 				8BA05A84072073D200365D66 /* AUInputElement.h */,
 				8BA05A85072073D200365D66 /* AUOutputElement.cpp */,
@@ -223,8 +224,6 @@
 				F7C347EF0ECE5AF8008ADFB6 /* AUBaseHelper.h */,
 				8BA05AA7072073D200365D66 /* AUBuffer.cpp */,
 				8BA05AA8072073D200365D66 /* AUBuffer.h */,
-				8BA05AA9072073D200365D66 /* AUDebugDispatcher.cpp */,
-				8BA05AAA072073D200365D66 /* AUDebugDispatcher.h */,
 				8BA05AAB072073D200365D66 /* AUInputFormatConverter.h */,
 				8BA05AAC072073D200365D66 /* AUSilentTimeout.h */,
 				8BA05AAD072073D200365D66 /* AUTimestampGenerator.h */,
@@ -248,8 +247,8 @@
 				3EEA126C089847F5002C6BFC /* CAVectorUnit.h */,
 			);
 			name = PublicUtility;
-			path = Extras/CoreAudio/PublicUtility;
-			sourceTree = SYSTEM_DEVELOPER_DIR;
+			path = ../AppleCoreAudioUtilityClasses/CoreAudio/PublicUtility;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -261,13 +260,13 @@
 				8BA05A6E0720730100365D66 /* DeBessVersion.h in Headers */,
 				8BA05AAF072073D300365D66 /* AUBase.h in Headers */,
 				8BA05AB1072073D300365D66 /* AUDispatch.h in Headers */,
+				F7C347F30ECE5AF8008ADFB6 /* AUPlugInDispatch.h in Headers */,
 				8BA05AB3072073D300365D66 /* AUInputElement.h in Headers */,
 				8BA05AB5072073D300365D66 /* AUOutputElement.h in Headers */,
 				8BA05AB8072073D300365D66 /* AUScopeElement.h in Headers */,
 				8BA05ABA072073D300365D66 /* ComponentBase.h in Headers */,
 				8BA05AC7072073D300365D66 /* AUEffectBase.h in Headers */,
 				8BA05AD3072073D300365D66 /* AUBuffer.h in Headers */,
-				8BA05AD5072073D300365D66 /* AUDebugDispatcher.h in Headers */,
 				8BA05AD6072073D300365D66 /* AUInputFormatConverter.h in Headers */,
 				8BA05AD7072073D300365D66 /* AUSilentTimeout.h in Headers */,
 				8BA05AD8072073D300365D66 /* AUTimestampGenerator.h in Headers */,
@@ -293,7 +292,6 @@
 				8D01CCC90486CAD60068D4B7 /* Resources */,
 				8D01CCCB0486CAD60068D4B7 /* Sources */,
 				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
-				8D01CCCF0486CAD60068D4B7 /* Rez */,
 			);
 			buildRules = (
 			);
@@ -359,13 +357,13 @@
 				8BA05A6B0720730100365D66 /* DeBess.cpp in Sources */,
 				8BA05AAE072073D300365D66 /* AUBase.cpp in Sources */,
 				8BA05AB0072073D300365D66 /* AUDispatch.cpp in Sources */,
+				F7C347F20ECE5AF8008ADFB6 /* AUPlugInDispatch.cpp in Sources */,
 				8BA05AB2072073D300365D66 /* AUInputElement.cpp in Sources */,
 				8BA05AB4072073D300365D66 /* AUOutputElement.cpp in Sources */,
 				8BA05AB7072073D300365D66 /* AUScopeElement.cpp in Sources */,
 				8BA05AB9072073D300365D66 /* ComponentBase.cpp in Sources */,
 				8BA05AC6072073D300365D66 /* AUEffectBase.cpp in Sources */,
 				8BA05AD2072073D300365D66 /* AUBuffer.cpp in Sources */,
-				8BA05AD4072073D300365D66 /* AUDebugDispatcher.cpp in Sources */,
 				8BA05AE50720742100365D66 /* CAAudioChannelLayout.cpp in Sources */,
 				8BA05AE70720742100365D66 /* CAMutex.cpp in Sources */,
 				8BA05AE90720742100365D66 /* CAStreamBasicDescription.cpp in Sources */,
@@ -392,6 +390,10 @@
 		3E4BA244089833B7007656EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../AppleCoreAudioUtilityClasses/CoreAudio/PublicUtility",
+					"$(PROJECT_DIR)/../AppleCoreAudioUtilityClasses/CoreAudio/AudioUnits/AUPublic",
+				);
 				EXPORTED_SYMBOLS_FILE = DeBess.exp;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -413,6 +415,10 @@
 					ppc,
 					i386,
 					x86_64,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../AppleCoreAudioUtilityClasses/CoreAudio/PublicUtility",
+					"$(PROJECT_DIR)/../AppleCoreAudioUtilityClasses/CoreAudio/AudioUnits/AUPublic",
 				);
 				EXPORTED_SYMBOLS_FILE = DeBess.exp;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
