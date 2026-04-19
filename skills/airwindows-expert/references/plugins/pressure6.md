@@ -41,4 +41,4 @@ organic, glue, vari-mu, 2-buss, smooth, musical, vintage compression
 - Only 2 `double` state variables (`muComp`, `muSpd`) — trivially lightweight to port
 - Quadratic envelope damping: `muSpd = muSpd * (muSpd - 1.0)` in the update step — preserve this exactly
 - `sin()` saturation at wet threshold: don't replace with a simpler curve; this is the character
-- Not in `plugins.json` — use `Airwindopedia.txt` or Proc.cpp for full description
+- Read Proc.cpp for the soft-knee and quadratic damping equations

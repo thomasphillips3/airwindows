@@ -27,7 +27,7 @@ airwindows/
 │   ├── {Name}.h                   ← class, enum, state variables
 │   ├── {Name}.cpp                 ← lifecycle, parameter names/display
 │   └── {Name}Proc.cpp             ← all DSP (processReplacing / processDoubleReplacing)
-├── docs/data/plugins.json         ← 360 plugins with descriptions + categories
+├── docs/data/plugins.json         ← 507 plugins with descriptions + categories
 ├── Airwindopedia.txt              ← complete text catalog (all 506, authoritative)
 ├── what.txt                       ← one-line summary per plugin
 └── skills/airwindows-expert/
@@ -35,8 +35,8 @@ airwindows/
     └── references/plugins/{name}.md   ← curated docs for 20 key plugins
 ```
 
-`plugins.json` covers 360/506 plugins — 146 exist in WinVST but not in the JSON.
-`plugin-index.json` covers all 506 and is the authoritative existence check.
+`plugins.json` covers 507 entries — all WinVST plugins with descriptions and categories.
+`plugin-index.json` covers all 506 WinVST plugins and is the authoritative existence check.
 
 ## Category taxonomy (22 categories)
 

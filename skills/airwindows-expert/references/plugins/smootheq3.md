@@ -49,4 +49,4 @@ smooth, musical, clean, shelving EQ, approachable, low-artifact
 - Fixed crossover frequencies (200 Hz / 4000 Hz) — precompute all biquad coefficients in `prepareToPlay`
 - `overallscale` scales the IIR smoothing; 8 sample-rate references means timing/smoothing is carefully adapted
 - The Q=1.0 simplification means coefficient calculation is lighter than a fully parameterized EQ
-- Not in `plugins.json` — use `Airwindopedia.txt` entry for description
+- Read Proc.cpp for exact Butterworth coefficient derivation

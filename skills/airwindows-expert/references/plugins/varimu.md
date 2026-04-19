@@ -1,6 +1,6 @@
 # VariMu
 
-**Category:** Dynamics (not listed in `plugins.json`)
+**Category:** Dynamics
 **Source:** `plugins/WinVST/VariMu/`
 **Unique ID:** `vari`
 
@@ -22,7 +22,7 @@ Threshold comparison uses squared signal amplitude (`muVaryL = threshold / squar
 
 | Param | Name | Sonic effect |
 |-------|------|-------------|
-| A | Intensty | Compression depth |
+| A | Intensity | Compression depth |
 | B | Speed | Envelope follower speed (slower = more vintage character) |
 | C | Output | Makeup gain |
 | D | Dry/Wet | Blend |
@@ -44,4 +44,4 @@ vintage, vari-mu, organic, slow compression, warm, character, bus compressor
 - `flip` boolean — alternates A/B coefficients each sample; declare as `bool` member
 - Square-root attack: `muAttackL = sqrt(fabs(muSpeedAL))` — preserve this; it's the character
 - Denormal injection modulo cascade — preserve the stack of tiny arithmetic; it prevents CPU stalls in the envelope follower at near-silence
-- Not in `plugins.json` — read Proc.cpp directly for the envelope update equations
+- Read Proc.cpp directly for the envelope update equations

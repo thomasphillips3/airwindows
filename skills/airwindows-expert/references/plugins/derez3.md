@@ -43,4 +43,4 @@ lo-fi, vintage, sampler, bitcrushed, degraded, retro digital, texture, gritty
 - `bez_cycle` accumulator: increments by `rez` each sample, wraps at 1.0 — when it wraps, advance the circular buffer
 - Bezier cubic blend uses the stored A/B/C samples and `bez_cycle` as the interpolation position
 - `Rate` and `Rez` are linearly interpolated across the block (rezA/rezB, bitA/bitB) — smooth automation
-- Not in `plugins.json` — read Proc.cpp for exact Bezier weights and cycle management
+- Read Proc.cpp for exact Bezier weights and cycle management

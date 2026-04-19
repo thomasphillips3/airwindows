@@ -43,4 +43,4 @@ clean, airy, quiet, transparent, highpassed noise, mastering, dither
 - The subtraction approach: `currentDither = randomSample; shaped = currentDither - previousDither; previousDither = currentDither;`
 - Apply at the absolute end of the signal chain, after all processing
 - In JUCE at 32-bit float: typically omit (no wordlength reduction happening); include only when exporting to 16-bit or 24-bit
-- Not in `plugins.json` — use `Airwindopedia.txt` for full description
+- Read Proc.cpp for the exact subtraction dither implementation

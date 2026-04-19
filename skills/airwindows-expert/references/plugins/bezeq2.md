@@ -43,5 +43,5 @@ transparent, subtle, invisible EQ, unusual, phasey at extremes, mastering
 - Introduces latency (band delay structure) — report via `getLatencySamples()` and compute the sample count from `overallscale`
 - The crossover `x` parameters affect delay lengths — changes require state reset (or careful interpolation)
 - 6 `double` state variables; all filter/delay state
-- Not in `plugins.json` — read Proc.cpp for exact delay lengths and crossover math
+- Read Proc.cpp for exact delay lengths and crossover math
 - The "cutting mid to zero cancels highs" behavior is a known side-effect of the delay structure; preserve it, don't try to fix it

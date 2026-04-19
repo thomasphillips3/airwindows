@@ -291,27 +291,37 @@ clean_build_airwindows() {
   print_success "Build directory cleaned"
 }
 
+_cmake_build_type() {
+  case "${1,,}" in
+    release)        echo "Release" ;;
+    dev|alpha|debug) echo "Debug" ;;
+    *)              echo "Release" ;;
+  esac
+}
+
 configure_cmake() {
   local project_root="$1"
   local build_type="$2"
-  local cmake_cmd
+  local cmake_cmd cmake_build_type
   cmake_cmd=$(get_cmake)
-  
+  cmake_build_type=$(_cmake_build_type "$build_type")
+
   print_info "Configuring CMake for $build_type build..."
   print_info "Using CMake: $cmake_cmd"
-  
+
   export BBM_BUILD_TYPE="$build_type"
-  "$cmake_cmd" -S "$project_root" -B "$project_root/build" -DCMAKE_BUILD_TYPE=Release
+  "$cmake_cmd" -S "$project_root" -B "$project_root/build" -DCMAKE_BUILD_TYPE="$cmake_build_type"
   print_success "CMake configured"
 }
 
 build_plugin() {
   local project_root="$1"
-  local cmake_cmd
+  local cmake_cmd cmake_build_type
   cmake_cmd=$(get_cmake)
-  
+  cmake_build_type=$(_cmake_build_type "${BBM_BUILD_TYPE:-release}")
+
   print_info "Building..."
-  "$cmake_cmd" --build "$project_root/build" --config Release -j$(sysctl -n hw.ncpu)
+  "$cmake_cmd" --build "$project_root/build" --config "$cmake_build_type" -j$(sysctl -n hw.ncpu)
   print_success "Build completed"
 }
 
@@ -471,9 +481,12 @@ package_plugins() {
     first_au=$(find "$artefacts" -maxdepth 4 -name "*.component" -print -quit 2>/dev/null || true)
     first_aax=$(find "$artefacts" -maxdepth 4 -name "*.aaxplugin" -print -quit 2>/dev/null || true)
     first_app=$(find "$artefacts" -maxdepth 4 -name "*.app" -print -quit 2>/dev/null || true)
-    # Prefer VST2 (.vst) for Airwindows, but also support VST3 if available
-    if [ -n "$first_vst" ]; then vst3s=("$first_vst"); fi
-    if [ -n "$first_vst3" ]; then vst3s=("$first_vst3"); fi
+    # Prefer VST2 (.vst) for Airwindows; fall back to VST3 only if no VST2 found
+    if [ -n "$first_vst" ]; then
+      vst3s=("$first_vst")
+    elif [ -n "$first_vst3" ]; then
+      vst3s=("$first_vst3")
+    fi
     if [ -n "$first_au" ]; then aus=("$first_au"); fi
     if [ -n "$first_aax" ]; then aaxs=("$first_aax"); fi
     if [ -n "$first_app" ]; then apps=("$first_app"); fi

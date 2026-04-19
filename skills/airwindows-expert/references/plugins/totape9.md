@@ -52,4 +52,4 @@ warm, tape, vintage, saturated, weighted, organic, flutter
 - `gcount` integer — flutter phase accumulator; member
 - Head bump biquad (`hdbA/hdbB`) coefficients must be recomputed in `prepareToPlay` and when HeadFrq changes
 - ClipOnly3 state (`intermediateL/R[18]`, `slewL/R[34]`, clip flags) — must be member state
-- Not in `plugins.json` — use `Airwindopedia.txt` for full description
+- Read Proc.cpp for the flutter delay and head bump biquad implementation

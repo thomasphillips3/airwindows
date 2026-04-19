@@ -47,5 +47,5 @@ air, sparkle, presence, open, bright, controlled, slew-limited
 - `air[accSL1..3]`, `air[acc2SL1..2]` — first and second difference accumulators
 - `air[gainAL]`, `air[gndavgL]` — adaptive gain and ground average
 - `air[lastSL/SR]` — Sinew slew state (last output value)
-- Not in `plugins.json` — presence extraction cascade structure is in Proc.cpp
+- Presence extraction cascade structure is in Proc.cpp
 - `overallscale` used for timing in the Sinew rate limiting
