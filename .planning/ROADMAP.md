@@ -1,16 +1,20 @@
 # Roadmap — Airwindows Expert Skill
 
-## Overview
+## Milestones
 
-Claude skill at `skills/airwindows-expert/` that makes coding agents fluent in Airwindows DSP selection, porting, and JUCE UI integration. Built on Chris Johnson's 506-plugin open-source collection.
+- ✅ **v1.0 JUCE UI Phase** — Phase 1 (shipped 2026-04-20) · [archive](.planning/milestones/v1.0-ROADMAP.md)
 
-### Phase 1: Add JUCE UI component recommendations to the airwindows-expert skill
+## Phases
 
-**Goal:** Produce a copy-paste-ready JUCE plugin editor reference (`juce-ui-components.md`) covering the full standard widget set and APVTS attachment classes, and update SKILL.md to route UI-related questions to the new doc.
-**Requirements**: D-01, D-02, D-03, D-04, D-05, D-06, D-07, D-08, D-09, D-10
-**Depends on:** Phase 0
-**Plans:** 1/1 plans complete
+<details>
+<summary>✅ v1.0 JUCE UI Phase (Phase 1) — SHIPPED 2026-04-20</summary>
 
-Plans:
-- [x] 01-01-PLAN.md — Create juce-ui-components.md reference and update SKILL.md nav table
+- [x] Phase 1: Add JUCE UI component recommendations to the airwindows-expert skill (1/1 plans) — completed 2026-04-20
 
+</details>
+
+## Progress
+
+| Phase | Milestone | Plans Complete | Status   | Completed  |
+|-------|-----------|---------------|----------|------------|
+| 1. Add JUCE UI component recommendations | v1.0 | 1/1 | Complete | 2026-04-20 |
