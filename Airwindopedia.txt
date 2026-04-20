@@ -45,7 +45,7 @@ Subtlety: Mastering2, Discontapeity, Mastering, Discontinuity, Hype, Shape, Infl
 
 Tape: ToTape9, TapeHack2, ToTape8, ToTape7, ToTape6, FromTape, TapeHack, Tape, IronOxideClassic2, IronOxide5, ToTape5, IronOxideClassic
 
-Tone Color: BussColors4, Channel9, Apicolypse, Neverland, Elation, Calibre, Cider, Crystal, Precious, Luxor, Channel8, Channel7, Channel6, Channel5, Channel4
+Tone Color: WoodenBox, BussColors4, Channel9, Apicolypse, Neverland, Elation, Calibre, Cider, Crystal, Precious, Luxor, Channel8, Channel7, Channel6, Channel5, Channel4
 
 Utility: SoftClock2, SoftClock, BitShiftPan, BitShiftGain, PurestGain, PurestDualPan, PurestFade, Monitoring3, Monitoring2, Monitoring, EveryTrim, HermeTrim, DubPlate2, DubPlate, CansAW, Cans, SlewOnly, SubsOnly, PeaksOnly, Golem, DCVoltage, LRConvolve2, LRConvolve, EdIsDim, MidSide, uLawEncode, uLawDecode, RightoMono, LeftoMono, Balanced, Flipity, MoNoam, VoiceTrick, DeCrackle, ContentHideD
 
@@ -343,7 +343,7 @@ If you cut, you're pulling it back before it reaches 'anti-saturation', so it's 
 
 There's an input gain control so you can gain stage this, but it's all working off Treble and Bass being either exactly 0.5, or Bad Things happen. The fact that they're interleaved Bessel filters just means the things that happen are spread across a wider range. The tone shapings that can happen out of this are really interesting and bizarre.
 
-Thing is, there's a twist to the catch. Stuff being expanded and dynamic-ified when it gets louder? That behavior also makes things sound farther away. Suppressing and distorting stuff more when you turn it down? That tends to make things sound more close-up. So the most basic, fundamental operations of Baxandall3 simultaneously apply huge EQ curves, while also hiding them and making them shift spatially the opposite to what you'd expect. Normally when we push levels up we expect saturation to rise. In Console7, the first time I experimented with this mechanic, that's what you get: more is also closer, and it's very natural and easy to hear. This? This is backwards.
+Thing is, there's a twist to the catch. Stuff being expanded and dynamic-ified when it gets louder? That behavior also makes things sound farther away. Suppressing and distorting stuff more when you turn it down? That tends to make things sound more close-up. So the most basic, fundamental operations of Baxandall3 simultaneously apply huge EQ curves, while also hiding them and making them shift spatially the opposite to what you'd expect. Normally when we push levels up we expect saturation to rise. In Console7, the first time I experimented with this mechanic, that's what you get: more is also closer, and it's very natural and easy to hear. (FatEQ is the same.) This? This is backwards.
 
 I can't even imagine what people will make of this. If you're not being super-aggressive with it, you'll find that it responds to the tiniest adjustments. If you are getting super-aggressive with it, let me know what works and what doesn't because I'm still wrapping my head around how it even works. I assume there's going to be some sort of sound that Baxandall3 fits perfectly, and I'm not entirely sure what it'd be. But in its backward spatial tomfoolery, I'm sure it's the missing link for getting SOME kind of tone. Enjoy exploring!
 
@@ -6404,6 +6404,22 @@ It acts more like a bass amp than a transformer DI, but more like some strange n
 I need to try it in some mixes, and so can you. I bet I can add deep-bass boosts and get something else out of it, but even just as it is, I can immediately hear how it would fill in a spot where bass guitars are supposed to go. It's just that rather than going crazy on the channel EQ, or running a bass amp and going crazy on that, it will just do that sound right away and it'll sit in an otherwise full-range mix reinforcing exactly what I want the bass guitar to reinforce.
 
 I've looked at the output in a wave editor and it's terrifying to think that this monstrous thing is probably my new go-to DI bass plugin, but here we are. Oh, and I bet you anything this makes basses project better on a phone. Have fun :)
+
+############ WoodenBox is like a miniature reverb for converting DI to acoustic.
+
+The request was for a plugin to convert an electric guitar sound (presumably DI?) to the sound of an acoustic.
+
+In a very abstract way, this might be the answer for that?
+
+It's more complicated, though, because as usual I'm exploring the larger ideas around that. The very most obvious thing to do would be 'take the impulse response of an acoustic guitar, maybe if you're feeling ambitious try to strip out the original electric's tone quality or put big tone controls on or something, done'. But it might not be that simple…
+
+What's an acoustic guitar sound, anyway? Vibrations of wood, extra sonorities, resonances. Except those are called 'wolf tones' and are always bad. And anything we add along those lines will be other forms of wolf tones or resonator-guitar clangs, and will be bad. So what then?
+
+One thing about an acoustic guitar is, it's also a miniature room made out of wood. It vibrates, but also it reverberates. And I've been putting all this work into reverbs over the years… so what if I run the same grueling search for interesting, well-balanced rooms, but on miniature spaces? (never mind that I've only recently discovered new ways for the rooms to be better balanced!)
+
+And so we have WoodenBox. Like the older reverbs based on ClearCoat, it has a bunch of different spaces/colors on tap. But they're all extremely tiny compared to even a small room. There's enough going on in them to produce a vague stereo-ish quality, but not so much that it's a chorus effect. The tone is dense, confined: it doesn't replace the need for a room or chamber sound. But it doctors and reshapes the tone in the way that a simple room reverb never would. And it can be used on many things beyond guitars… for instance, synth patches, or perhaps electronic drums.
+
+I don't know quite where this leads, but it's an interesting start to have made. People who were asking to get smaller rooms out of me… well, you're still getting those, but first you get stuck in a wooden box :)
 
 ############ XBandpass is a distorted digital EQ, inspired by retro sampler DSP.
 
