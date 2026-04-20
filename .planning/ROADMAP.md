@@ -9,8 +9,8 @@ Claude skill at `skills/airwindows-expert/` that makes coding agents fluent in A
 **Goal:** Produce a copy-paste-ready JUCE plugin editor reference (`juce-ui-components.md`) covering the full standard widget set and APVTS attachment classes, and update SKILL.md to route UI-related questions to the new doc.
 **Requirements**: D-01, D-02, D-03, D-04, D-05, D-06, D-07, D-08, D-09, D-10
 **Depends on:** Phase 0
-**Plans:** 1 plan
+**Plans:** 1/1 plans complete
 
 Plans:
-- [ ] 01-01-PLAN.md — Create juce-ui-components.md reference and update SKILL.md nav table
+- [x] 01-01-PLAN.md — Create juce-ui-components.md reference and update SKILL.md nav table
 
