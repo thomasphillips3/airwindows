@@ -73,6 +73,7 @@ airwindows/
 | "How does [PluginName] work?" | [references/plugins/{name}.md](references/plugins/) if it exists; otherwise read `Airwindopedia.txt` or `{Name}Proc.cpp` directly |
 | "All plugins in a category?" | [categories.md](references/categories.md) |
 | "Port this DSP into JUCE" | [integration-juce.md](references/integration-juce.md) |
+| "Build a plugin UI for an Airwindows-derived processor" | [juce-ui-components.md](references/juce-ui-components.md) |
 | "What are Chris's recurring idioms?" | [dsp-idioms.md](references/dsp-idioms.md) |
 | "Does plugin X exist / what are its parameters?" | Query `plugin-index.json` (506 records, one per plugin) |
 | "MIT license, attribution?" | [licensing.md](references/licensing.md) |
