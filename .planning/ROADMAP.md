@@ -2,7 +2,7 @@
 
 ## Milestones
 
-- ✅ **v1.0 JUCE UI Phase** — Phase 1 (shipped 2026-04-20) · [archive](.planning/milestones/v1.0-ROADMAP.md)
+- ✅ **v1.0 JUCE UI Phase** — Phase 1 (shipped 2026-04-20) · [archive](milestones/v1.0-ROADMAP.md)
 
 ## Phases
 

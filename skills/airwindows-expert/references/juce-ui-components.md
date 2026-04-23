@@ -132,9 +132,22 @@ addAndMakeVisible(wetSlider);
 Attachment wires range, initial value, and automation callbacks automatically:
 
 ```cpp
-juce::AudioProcessorValueTreeState::SliderAttachment wetAttachment;
-// In constructor initializer list:
-// wetAttachment(apvts, "wet", wetSlider)
+class MyEditor : public juce::AudioProcessorEditor
+{
+public:
+    MyEditor(juce::AudioProcessor& p, juce::AudioProcessorValueTreeState& state)
+        : juce::AudioProcessorEditor(p),
+          apvts(state),
+          wetAttachment(apvts, "wet", wetSlider)
+    {
+        addAndMakeVisible(wetSlider);
+    }
+
+private:
+    juce::AudioProcessorValueTreeState& apvts;
+    juce::Slider wetSlider;
+    juce::AudioProcessorValueTreeState::SliderAttachment wetAttachment;
+};
 ```
 
 ---
@@ -253,6 +266,14 @@ void MyEditor::resized()
 
 For visual feedback — VU meter, gain reduction display, waveform. Subclass `juce::Component` and `juce::Timer`. Pull state from the processor via a simple float accessor; repaint on a timer callback.
 
+Meter reads must use `std::atomic` or a lock-free FIFO — never read a plain `float` written by the audio thread (data race, UB). Expose the value as `std::atomic<float>` on the processor:
+
+```cpp
+// In MyProcessor:
+std::atomic<float> gainReduction { 0.0f };
+// In processBlock: gainReduction.store(computedLevel);
+```
+
 ```cpp
 class GainMeter : public juce::Component, public juce::Timer
 {
@@ -262,7 +283,7 @@ public:
     void paint(juce::Graphics& g) override
     {
         g.fillAll(juce::Colours::black);
-        float level = processor.getGainReduction();  // 0.0–1.0 from processor
+        float level = processor.gainReduction.load();  // atomic read — safe on message thread
         g.setColour(juce::Colours::green);
         g.fillRect(0.0f, 0.0f, (float)getWidth() * level, (float)getHeight());
     }

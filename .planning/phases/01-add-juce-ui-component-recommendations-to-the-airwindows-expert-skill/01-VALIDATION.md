@@ -1,5 +1,5 @@
 ---
-phase: 1
+phase: 01-add-juce-ui-component-recommendations-to-the-airwindows-expert-skill
 slug: add-juce-ui-component-recommendations-to-the-airwindows-expert-skill
 status: draft
 nyquist_compliant: false
@@ -73,6 +73,6 @@ created: 2026-04-19
 - [ ] Wave 0 covers all MISSING references
 - [ ] No watch-mode flags
 - [ ] Feedback latency < 10s
-- [ ] `nyquist_compliant: true` set in frontmatter
+- [ ] `nyquist_compliant` frontmatter value matches the current document state
 
 **Approval:** pending

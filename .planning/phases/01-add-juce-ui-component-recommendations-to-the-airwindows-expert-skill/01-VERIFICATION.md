@@ -1,7 +1,7 @@
 ---
 phase: 01-add-juce-ui-component-recommendations-to-the-airwindows-expert-skill
 verified: 2026-04-20T00:00:00Z
-status: passed
+status: human_needed
 score: 6/6 must-haves verified
 human_verification:
   - test: "Open skills/airwindows-expert/references/juce-ui-components.md and skills/airwindows-expert/references/integration-juce.md side by side. Confirm H2 section structure, terse actionable prose, cpp-tagged code blocks, and quick-reference checklist at end match integration-juce.md style."
