@@ -110,6 +110,69 @@
     }
   },
   {
+    "name": "ADClip9",
+    "slug": "adclip9",
+    "source_dir": "plugins/WinVST/ADClip9",
+    "files": {
+      "h": "plugins/WinVST/ADClip9/ADClip9.h",
+      "cpp": "plugins/WinVST/ADClip9/ADClip9.cpp",
+      "proc_cpp": "plugins/WinVST/ADClip9/ADClip9Proc.cpp"
+    },
+    "unique_id": "adct",
+    "num_parameters": 5,
+    "parameters": [
+      {
+        "index": 0,
+        "enum_suffix": "A",
+        "name": "Boost",
+        "label": "dB"
+      },
+      {
+        "index": 1,
+        "enum_suffix": "B",
+        "name": "Match",
+        "label": "dB"
+      },
+      {
+        "index": 2,
+        "enum_suffix": "C",
+        "name": "Noise",
+        "label": ""
+      },
+      {
+        "index": 3,
+        "enum_suffix": "D",
+        "name": "Ceiling",
+        "label": ""
+      },
+      {
+        "index": 4,
+        "enum_suffix": "E",
+        "name": "Mode",
+        "label": ""
+      }
+    ],
+    "top_comment": "/* ======================================== | ADClip9 - ADClip9.h | Copyright (c) airwindows, Airwindows uses the MIT license",
+    "complexity": {
+      "total_lines": 410,
+      "fpd_references": 36,
+      "sample_rate_references": 2,
+      "state_var_doubles": 8,
+      "has_proc_cpp": true
+    },
+    "airwindopedia": {
+      "short_description": "",
+      "full_description": "",
+      "categories": [
+        "Utility"
+      ],
+      "is_latest": false,
+      "is_recommended": false,
+      "is_basic": false,
+      "tags": []
+    }
+  },
+  {
     "name": "ADT",
     "slug": "adt",
     "source_dir": "plugins/WinVST/ADT",
@@ -1587,6 +1650,87 @@
       "tags": [
         "Latest"
       ]
+    }
+  },
+  {
+    "name": "BezEQ3",
+    "slug": "bezeq3",
+    "source_dir": "plugins/WinVST/BezEQ3",
+    "files": {
+      "h": "plugins/WinVST/BezEQ3/BezEQ3.h",
+      "cpp": "plugins/WinVST/BezEQ3/BezEQ3.cpp",
+      "proc_cpp": "plugins/WinVST/BezEQ3/BezEQ3Proc.cpp"
+    },
+    "unique_id": "bzes",
+    "num_parameters": 8,
+    "parameters": [
+      {
+        "index": 0,
+        "enum_suffix": "A",
+        "name": "High",
+        "label": ""
+      },
+      {
+        "index": 1,
+        "enum_suffix": "B",
+        "name": "HMid",
+        "label": ""
+      },
+      {
+        "index": 2,
+        "enum_suffix": "C",
+        "name": "LMid",
+        "label": ""
+      },
+      {
+        "index": 3,
+        "enum_suffix": "D",
+        "name": "Bass",
+        "label": ""
+      },
+      {
+        "index": 4,
+        "enum_suffix": "E",
+        "name": "HighF",
+        "label": ""
+      },
+      {
+        "index": 5,
+        "enum_suffix": "F",
+        "name": "HMidF",
+        "label": ""
+      },
+      {
+        "index": 6,
+        "enum_suffix": "G",
+        "name": "LMidF",
+        "label": ""
+      },
+      {
+        "index": 7,
+        "enum_suffix": "H",
+        "name": "BassF",
+        "label": ""
+      }
+    ],
+    "top_comment": "/* ======================================== | BezEQ3 - BezEQ3.h | Copyright (c) airwindows, Airwindows uses the MIT license",
+    "complexity": {
+      "total_lines": 434,
+      "fpd_references": 32,
+      "sample_rate_references": 2,
+      "state_var_doubles": 1,
+      "has_proc_cpp": true
+    },
+    "airwindopedia": {
+      "short_description": "",
+      "full_description": "",
+      "categories": [
+        "Utility"
+      ],
+      "is_latest": false,
+      "is_recommended": false,
+      "is_basic": false,
+      "tags": []
     }
   },
   {
@@ -10969,16 +11113,16 @@
       {
         "index": 3,
         "enum_suffix": "D",
-        "name": "Gate",
+        "name": "Ratio",
         "label": ""
       }
     ],
     "top_comment": "/* ======================================== | Dynamics3 - Dynamics3.h | Copyright (c) airwindows, Airwindows uses the MIT license",
     "complexity": {
-      "total_lines": 310,
+      "total_lines": 293,
       "fpd_references": 32,
       "sample_rate_references": 2,
-      "state_var_doubles": 4,
+      "state_var_doubles": 1,
       "has_proc_cpp": true
     },
     "airwindopedia": {
@@ -22874,6 +23018,60 @@
     }
   },
   {
+    "name": "Suzan",
+    "slug": "suzan",
+    "source_dir": "plugins/WinVST/Suzan",
+    "files": {
+      "h": "plugins/WinVST/Suzan/Suzan.h",
+      "cpp": "plugins/WinVST/Suzan/Suzan.cpp",
+      "proc_cpp": "plugins/WinVST/Suzan/SuzanProc.cpp"
+    },
+    "unique_id": "suza",
+    "num_parameters": 3,
+    "parameters": [
+      {
+        "index": 0,
+        "enum_suffix": "A",
+        "name": "Freq",
+        "label": ""
+      },
+      {
+        "index": 1,
+        "enum_suffix": "B",
+        "name": "Reso",
+        "label": ""
+      },
+      {
+        "index": 2,
+        "enum_suffix": "C",
+        "name": "Output",
+        "label": ""
+      }
+    ],
+    "top_comment": "/* ======================================== | Suzan - Suzan.h | Copyright (c) airwindows, Airwindows uses the MIT license",
+    "complexity": {
+      "total_lines": 286,
+      "fpd_references": 32,
+      "sample_rate_references": 2,
+      "state_var_doubles": 7,
+      "has_proc_cpp": true
+    },
+    "airwindopedia": {
+      "short_description": "a new type of ladder filter",
+      "full_description": "So a funny thing happened to me on the way to Dattorro…\n\nI was talking about the very simple state variable filter I made, Dattorro, and how it was very handy, could even substitute for a biquad filter according to Andy from Cytomic who's an eager advocate of these (as opposed to, say, a biquad filter of direct form 1), and how I'd come up with a twist on it using only a sin() function to do the unexpected thing of subtracting the distorted bandpass element FROM the lowpass, and how that had a neat tone I liked. The twist was new, and I was excited about the possibilities.\n\nThen, on a famously crotchety forum, a guy popped up to object… saying I shouldn't call it not a biquad. It's just an SVF and not direct form 1, but it's still a biquadratic filter. You could even have literal analog filters that are biquads. I had the language wrong and he apologized for the fact that this drove him up the wall.\n\nHe's Antoine Portes, and he's writing an experimental book about filters called Working Class Filter Design. Biquadratic means the transfer function's denominator is a quadratic formula, another name for second order polynomial. He's been trying to do a really good Moog ladder, which apparently is more like fourth order, and he notes that we use Q for resonance, but there's another part that goes 1/(2*Q) and this doesn't have a consistent name. He's calling it Damping, but suggests if you don't like that you can call it Suzan for all the difference it'll make to him.\n\nNaturally, I was charmed though his math is over my foolish head :) and so, I got busy again, except it was with experimenting in code rather than figuring out the math of it. And I told him I'd name the filter, meant to be experiments on this fourth-order, Moog-flavored filter, 'Suzan' in his honor.\n\nAnd this is the result. It's a small stack of SVFs. The difference is, Antoine understandably is interested in representing these things in correct math, and doing sensible things at least some of the time. Me on the other hand… my whole deal is being able to try things that don't exist yet. By all rights the AIs should be paying me to come up with novel things for them (maybe there'll come a day when that's a reality).\n\nAnd so, Suzan is not two but three SVFs in series. And the SVFs are still normal, except I'm up to my Dattorro tricks but even worse. Stage A subtracts the bandpass of stage C. Stage B subtracts the bandpass of stage A… and stage C adds the bandpass of stage B. Oh, except they're all the sines of those bandpasses, and the first two are using half the amplitude of the bandpass, the final one which adds is using the full amplitude going into the sine function.\n\nI don't claim justification for this or an analysis of why it works. Swept way up high it can have high frequency instability when hit with full blast white noise, which I hope doesn't cause issues (I got it to where it was simply a boost but didn't blow up). I find it's a nice chunky resonant peak and even gives appropriate amounts of bass restriction when resonance is turned up… and the inappropriate use of feedback across the stages does a nice job of giving a colorful texture. One I am intimately familiar with both from records, and from owning everything from a MG-1 Concertmate to a Werkstatt to a Sub Phatty. But we're not calling it that, because it isn't one of those. It's Suzan, and it's trying to bring the right kind of mojo to my filter collection. I hope you like it :)",
+      "categories": [
+        "Filter"
+      ],
+      "is_latest": true,
+      "is_recommended": true,
+      "is_basic": false,
+      "tags": [
+        "Recommended",
+        "Latest"
+      ]
+    }
+  },
+  {
     "name": "SweetWide",
     "slug": "sweetwide",
     "source_dir": "plugins/WinVST/SweetWide",
@@ -28472,6 +28670,57 @@
       "tags": [
         "Latest"
       ]
+    }
+  },
+  {
+    "name": "kRockstar",
+    "slug": "krockstar",
+    "source_dir": "plugins/WinVST/kRockstar",
+    "files": {
+      "h": "plugins/WinVST/kRockstar/kRockstar.h",
+      "cpp": "plugins/WinVST/kRockstar/kRockstar.cpp",
+      "proc_cpp": "plugins/WinVST/kRockstar/kRockstarProc.cpp"
+    },
+    "unique_id": "krok",
+    "num_parameters": 3,
+    "parameters": [
+      {
+        "index": 0,
+        "enum_suffix": "A",
+        "name": "Regen",
+        "label": ""
+      },
+      {
+        "index": 1,
+        "enum_suffix": "B",
+        "name": "Positin",
+        "label": ""
+      },
+      {
+        "index": 2,
+        "enum_suffix": "C",
+        "name": "Dry/Wet",
+        "label": ""
+      }
+    ],
+    "top_comment": "/* ======================================== | kRockstar - kRockstar.h | Copyright (c) airwindows, Airwindows uses the MIT license",
+    "complexity": {
+      "total_lines": 1357,
+      "fpd_references": 44,
+      "sample_rate_references": 2,
+      "state_var_doubles": 118,
+      "has_proc_cpp": true
+    },
+    "airwindopedia": {
+      "short_description": "",
+      "full_description": "",
+      "categories": [
+        "Utility"
+      ],
+      "is_latest": false,
+      "is_recommended": false,
+      "is_basic": false,
+      "tags": []
     }
   },
   {
