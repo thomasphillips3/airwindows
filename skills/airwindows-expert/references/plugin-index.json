@@ -1715,15 +1715,15 @@
     ],
     "top_comment": "/* ======================================== | BezEQ3 - BezEQ3.h | Copyright (c) airwindows, Airwindows uses the MIT license",
     "complexity": {
-      "total_lines": 434,
-      "fpd_references": 32,
+      "total_lines": 438,
+      "fpd_references": 52,
       "sample_rate_references": 2,
       "state_var_doubles": 1,
       "has_proc_cpp": true
     },
     "airwindopedia": {
-      "short_description": "",
-      "full_description": "",
+      "short_description": "the concept into four vivid, unified bands",
+      "full_description": "Persistence has its rewards…\n\nThe idea was to see if BezEQ could be expanded into something I can use in a Console, for which I like having four bands and frequency sweep controls for each. But the delay lines built into BezEQ2 had to go, because I'd also want zero latency… and that would produce a phasier response, perhaps interactions between bands that would make it behave less normally. But normal's easy to come by, SmoothEQ2 exists, so what if we could get something worth having that's less normal?\n\nEnter BezEQ3. There's more improvements on getting it to filter smoothly, there's that needed 4th band, and the sweepable middle positions to the bands, but it's still very much BezEQ. It's refined that unusual tonality down, and is still using a filter topology where, set flat, it's literally perfectly transparent.\n\nAnd then it's perfectly transparent for any other setting, no matter how extreme… but how you GET to those settings is something else.\n\nBecause removing the internal delay lines and making it be zero latency, derailed the filter bands in some peculiar way. If you boost a frequency, you're cutting something else. Everything's kind of interactive. It's not going to behave nicely if you think you can treat it like shelving filters with neat markings. No point EVEN marking it. This is not SmoothEQ2, which runs on DF1 biquad filters like a normal plugin.\n\nInstead, you voice it by using the bands and sweeps as suggestions, and you listen to what it's doing. Nothing will get a frequency band to separate out and act like a 'frequency band', and curiously nothing will get frequency bands to come forward or fall back (like FatEQ) either. It acts, more than any other EQ I've ever heard or made, like no EQ had been done, and like the sound was that way on recording.\n\nIt's just that you can revoice things to a ridiculous degree and still have it sound like one coherent piece.\n\nThis plugin will be very polarizing. You will likely love it or absolutely hate it. I suspect some of the other old-schoolers will like what they hear. I'm almost sure anybody with extensive modern-production expertise will be frustrated and confused. So very many people think in terms of taking all the sounds and decomposing them into distinct pieces and fitting them together like some mixing jigsaw puzzle. What are you going to do with an EQ that refuses to separate out anything, where you can never turn a sound into this band and that band and holes where the bad audio used to be?\n\nMeanwhile, the old school practitioners of mixing black arts are licking their chops and can't wait to turn a much smaller number of tracks into something huge and compelling… sneakily heightening rawness and energy, without ever seeming like they are EQing. It's more like voicing. Nothing needs to be aggressive, just voice everything until it hits right and sits in the right places, and the top-to-bottom, left-to-right, mixing jigsaw puzzle can stay in the box. With suitable use of compression and saturation you could use this to mix a whole thing in mono, sounding unequalized, and it'd still hit like a ton of bricks.\n\nBezEQ3 is currently on track to be the primary EQ in ConsoleX3. Many people will just get mad at it, most likely. I'm just gonna have to show people what this is about… but if something happens when you try this plugin, and it gets exactly the sound you crave and you want to use it on everything… well, you know who you are, and you're welcome :)",
       "categories": [
         "Utility"
       ],
@@ -9384,8 +9384,8 @@
     ],
     "top_comment": "/* ======================================== | Density3 - Density3.h | Copyright (c) airwindows, Airwindows uses the MIT license",
     "complexity": {
-      "total_lines": 365,
-      "fpd_references": 32,
+      "total_lines": 369,
+      "fpd_references": 52,
       "sample_rate_references": 2,
       "state_var_doubles": 2,
       "has_proc_cpp": true
@@ -11113,14 +11113,14 @@
       {
         "index": 3,
         "enum_suffix": "D",
-        "name": "Ratio",
+        "name": "Dry/Wet",
         "label": ""
       }
     ],
     "top_comment": "/* ======================================== | Dynamics3 - Dynamics3.h | Copyright (c) airwindows, Airwindows uses the MIT license",
     "complexity": {
-      "total_lines": 293,
-      "fpd_references": 32,
+      "total_lines": 301,
+      "fpd_references": 52,
       "sample_rate_references": 2,
       "state_var_doubles": 1,
       "has_proc_cpp": true
@@ -15023,8 +15023,8 @@
     ],
     "top_comment": "/* ======================================== | LRConvolve3 - LRConvolve3.h | Copyright (c) airwindows, Airwindows uses the MIT license",
     "complexity": {
-      "total_lines": 244,
-      "fpd_references": 32,
+      "total_lines": 248,
+      "fpd_references": 52,
       "sample_rate_references": 2,
       "state_var_doubles": 1,
       "has_proc_cpp": true
@@ -15297,6 +15297,57 @@
       "tags": [
         "Latest"
       ]
+    }
+  },
+  {
+    "name": "Longhand",
+    "slug": "longhand",
+    "source_dir": "plugins/WinVST/Longhand",
+    "files": {
+      "h": "plugins/WinVST/Longhand/Longhand.h",
+      "cpp": "plugins/WinVST/Longhand/Longhand.cpp",
+      "proc_cpp": "plugins/WinVST/Longhand/LonghandProc.cpp"
+    },
+    "unique_id": "lonh",
+    "num_parameters": 3,
+    "parameters": [
+      {
+        "index": 0,
+        "enum_suffix": "A",
+        "name": "Input",
+        "label": ""
+      },
+      {
+        "index": 1,
+        "enum_suffix": "B",
+        "name": "Output",
+        "label": ""
+      },
+      {
+        "index": 2,
+        "enum_suffix": "C",
+        "name": "Dry/Wet",
+        "label": ""
+      }
+    ],
+    "top_comment": "/* ======================================== | Longhand - Longhand.h | Copyright (c) airwindows, Airwindows uses the MIT license",
+    "complexity": {
+      "total_lines": 319,
+      "fpd_references": 52,
+      "sample_rate_references": 0,
+      "state_var_doubles": 0,
+      "has_proc_cpp": true
+    },
+    "airwindopedia": {
+      "short_description": "",
+      "full_description": "",
+      "categories": [
+        "Utility"
+      ],
+      "is_latest": false,
+      "is_recommended": false,
+      "is_basic": false,
+      "tags": []
     }
   },
   {
@@ -17888,8 +17939,8 @@
     ],
     "top_comment": "/* ======================================== | PearLiteEQ - PearLiteEQ.h | Copyright (c) airwindows, Airwindows uses the MIT license",
     "complexity": {
-      "total_lines": 324,
-      "fpd_references": 32,
+      "total_lines": 328,
+      "fpd_references": 52,
       "sample_rate_references": 2,
       "state_var_doubles": 3,
       "has_proc_cpp": true
@@ -19346,8 +19397,8 @@
     ],
     "top_comment": "/* ======================================== | PunchyDeluxe - PunchyDeluxe.h | Copyright (c) airwindows, Airwindows uses the MIT license",
     "complexity": {
-      "total_lines": 472,
-      "fpd_references": 32,
+      "total_lines": 546,
+      "fpd_references": 52,
       "sample_rate_references": 2,
       "state_var_doubles": 5,
       "has_proc_cpp": true
@@ -19439,8 +19490,8 @@
     ],
     "top_comment": "/* ======================================== | PunchyGuitar - PunchyGuitar.h | Copyright (c) airwindows, Airwindows uses the MIT license",
     "complexity": {
-      "total_lines": 664,
-      "fpd_references": 32,
+      "total_lines": 684,
+      "fpd_references": 52,
       "sample_rate_references": 2,
       "state_var_doubles": 17,
       "has_proc_cpp": true
@@ -21873,8 +21924,8 @@
     ],
     "top_comment": "/* ======================================== | SoftClock3 - SoftClock3.h | Copyright (c) airwindows, Airwindows uses the MIT license",
     "complexity": {
-      "total_lines": 558,
-      "fpd_references": 32,
+      "total_lines": 562,
+      "fpd_references": 52,
       "sample_rate_references": 4,
       "state_var_doubles": 7,
       "has_proc_cpp": true
@@ -25899,10 +25950,10 @@
     ],
     "top_comment": "/* ======================================== | X2Buss - X2Buss.h | Copyright (c) airwindows, Airwindows uses the MIT license",
     "complexity": {
-      "total_lines": 1145,
-      "fpd_references": 32,
+      "total_lines": 1097,
+      "fpd_references": 56,
       "sample_rate_references": 14,
-      "state_var_doubles": 34,
+      "state_var_doubles": 26,
       "has_proc_cpp": true
     },
     "airwindopedia": {
@@ -28705,8 +28756,8 @@
     ],
     "top_comment": "/* ======================================== | kRockstar - kRockstar.h | Copyright (c) airwindows, Airwindows uses the MIT license",
     "complexity": {
-      "total_lines": 1357,
-      "fpd_references": 44,
+      "total_lines": 1361,
+      "fpd_references": 64,
       "sample_rate_references": 2,
       "state_var_doubles": 118,
       "has_proc_cpp": true
