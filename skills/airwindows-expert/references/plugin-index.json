@@ -1734,6 +1734,87 @@
     }
   },
   {
+    "name": "BezEQ4",
+    "slug": "bezeq4",
+    "source_dir": "plugins/WinVST/BezEQ4",
+    "files": {
+      "h": "plugins/WinVST/BezEQ4/BezEQ4.h",
+      "cpp": "plugins/WinVST/BezEQ4/BezEQ4.cpp",
+      "proc_cpp": "plugins/WinVST/BezEQ4/BezEQ4Proc.cpp"
+    },
+    "unique_id": "bzes",
+    "num_parameters": 8,
+    "parameters": [
+      {
+        "index": 0,
+        "enum_suffix": "A",
+        "name": "High",
+        "label": ""
+      },
+      {
+        "index": 1,
+        "enum_suffix": "B",
+        "name": "HMid",
+        "label": ""
+      },
+      {
+        "index": 2,
+        "enum_suffix": "C",
+        "name": "LMid",
+        "label": ""
+      },
+      {
+        "index": 3,
+        "enum_suffix": "D",
+        "name": "Bass",
+        "label": ""
+      },
+      {
+        "index": 4,
+        "enum_suffix": "E",
+        "name": "HighF",
+        "label": ""
+      },
+      {
+        "index": 5,
+        "enum_suffix": "F",
+        "name": "HMidF",
+        "label": ""
+      },
+      {
+        "index": 6,
+        "enum_suffix": "G",
+        "name": "LMidF",
+        "label": ""
+      },
+      {
+        "index": 7,
+        "enum_suffix": "H",
+        "name": "BassF",
+        "label": ""
+      }
+    ],
+    "top_comment": "/* ======================================== | BezEQ4 - BezEQ4.h | Copyright (c) airwindows, Airwindows uses the MIT license",
+    "complexity": {
+      "total_lines": 460,
+      "fpd_references": 52,
+      "sample_rate_references": 2,
+      "state_var_doubles": 1,
+      "has_proc_cpp": true
+    },
+    "airwindopedia": {
+      "short_description": "",
+      "full_description": "",
+      "categories": [
+        "Utility"
+      ],
+      "is_latest": false,
+      "is_recommended": false,
+      "is_basic": false,
+      "tags": []
+    }
+  },
+  {
     "name": "BeziComp",
     "slug": "bezicomp",
     "source_dir": "plugins/WinVST/BeziComp",
@@ -7334,6 +7415,483 @@
     }
   },
   {
+    "name": "ConsoleX3Buss",
+    "slug": "consolex3buss",
+    "source_dir": "plugins/WinVST/ConsoleX3Buss",
+    "files": {
+      "h": "plugins/WinVST/ConsoleX3Buss/ConsoleX3Buss.h",
+      "cpp": "plugins/WinVST/ConsoleX3Buss/ConsoleX3Buss.cpp",
+      "proc_cpp": "plugins/WinVST/ConsoleX3Buss/ConsoleX3BussProc.cpp"
+    },
+    "unique_id": "cx3b",
+    "num_parameters": 21,
+    "parameters": [
+      {
+        "index": 0,
+        "enum_suffix": "SMO",
+        "name": "Smooth",
+        "label": ""
+      },
+      {
+        "index": 1,
+        "enum_suffix": "TRM",
+        "name": "Input",
+        "label": "trim"
+      },
+      {
+        "index": 2,
+        "enum_suffix": "HIG",
+        "name": "High",
+        "label": "eq"
+      },
+      {
+        "index": 3,
+        "enum_suffix": "HMG",
+        "name": "HMid",
+        "label": ""
+      },
+      {
+        "index": 4,
+        "enum_suffix": "LMG",
+        "name": "LMid",
+        "label": ""
+      },
+      {
+        "index": 5,
+        "enum_suffix": "BSG",
+        "name": "Bass",
+        "label": ""
+      },
+      {
+        "index": 6,
+        "enum_suffix": "HIF",
+        "name": "HighF",
+        "label": "freq"
+      },
+      {
+        "index": 7,
+        "enum_suffix": "HMF",
+        "name": "HMidF",
+        "label": ""
+      },
+      {
+        "index": 8,
+        "enum_suffix": "LMF",
+        "name": "LMidF",
+        "label": ""
+      },
+      {
+        "index": 9,
+        "enum_suffix": "BSF",
+        "name": "BassF",
+        "label": ""
+      },
+      {
+        "index": 10,
+        "enum_suffix": "THR",
+        "name": "Thresh",
+        "label": "dyn"
+      },
+      {
+        "index": 11,
+        "enum_suffix": "ATK",
+        "name": "Attack",
+        "label": ""
+      },
+      {
+        "index": 12,
+        "enum_suffix": "RLS",
+        "name": "Release",
+        "label": ""
+      },
+      {
+        "index": 13,
+        "enum_suffix": "RAT",
+        "name": "Inv/Wet",
+        "label": ""
+      },
+      {
+        "index": 14,
+        "enum_suffix": "MOR",
+        "name": "More",
+        "label": "tape"
+      },
+      {
+        "index": 15,
+        "enum_suffix": "LOP",
+        "name": "Lowpass",
+        "label": ""
+      },
+      {
+        "index": 16,
+        "enum_suffix": "LPQ",
+        "name": "LowpasQ",
+        "label": ""
+      },
+      {
+        "index": 17,
+        "enum_suffix": "HIP",
+        "name": "Hipass",
+        "label": ""
+      },
+      {
+        "index": 18,
+        "enum_suffix": "HPQ",
+        "name": "HipassQ",
+        "label": ""
+      },
+      {
+        "index": 19,
+        "enum_suffix": "PAN",
+        "name": "Pan",
+        "label": ""
+      },
+      {
+        "index": 20,
+        "enum_suffix": "FAD",
+        "name": "Fader",
+        "label": ""
+      }
+    ],
+    "top_comment": "/* ======================================== | ConsoleX3Buss - ConsoleX3Buss.h | Copyright (c) airwindows, Airwindows uses the MIT license",
+    "complexity": {
+      "total_lines": 1462,
+      "fpd_references": 32,
+      "sample_rate_references": 2,
+      "state_var_doubles": 23,
+      "has_proc_cpp": true
+    },
+    "airwindopedia": {
+      "short_description": "",
+      "full_description": "",
+      "categories": [
+        "Utility"
+      ],
+      "is_latest": false,
+      "is_recommended": false,
+      "is_basic": false,
+      "tags": []
+    }
+  },
+  {
+    "name": "ConsoleX3Channel",
+    "slug": "consolex3channel",
+    "source_dir": "plugins/WinVST/ConsoleX3Channel",
+    "files": {
+      "h": "plugins/WinVST/ConsoleX3Channel/ConsoleX3Channel.h",
+      "cpp": "plugins/WinVST/ConsoleX3Channel/ConsoleX3Channel.cpp",
+      "proc_cpp": "plugins/WinVST/ConsoleX3Channel/ConsoleX3ChannelProc.cpp"
+    },
+    "unique_id": "cx3c",
+    "num_parameters": 21,
+    "parameters": [
+      {
+        "index": 0,
+        "enum_suffix": "SMO",
+        "name": "Smooth",
+        "label": ""
+      },
+      {
+        "index": 1,
+        "enum_suffix": "TRM",
+        "name": "Input",
+        "label": "trim"
+      },
+      {
+        "index": 2,
+        "enum_suffix": "HIG",
+        "name": "High",
+        "label": "eq"
+      },
+      {
+        "index": 3,
+        "enum_suffix": "HMG",
+        "name": "HMid",
+        "label": ""
+      },
+      {
+        "index": 4,
+        "enum_suffix": "LMG",
+        "name": "LMid",
+        "label": ""
+      },
+      {
+        "index": 5,
+        "enum_suffix": "BSG",
+        "name": "Bass",
+        "label": ""
+      },
+      {
+        "index": 6,
+        "enum_suffix": "HIF",
+        "name": "HighF",
+        "label": "freq"
+      },
+      {
+        "index": 7,
+        "enum_suffix": "HMF",
+        "name": "HMidF",
+        "label": ""
+      },
+      {
+        "index": 8,
+        "enum_suffix": "LMF",
+        "name": "LMidF",
+        "label": ""
+      },
+      {
+        "index": 9,
+        "enum_suffix": "BSF",
+        "name": "BassF",
+        "label": ""
+      },
+      {
+        "index": 10,
+        "enum_suffix": "THR",
+        "name": "Thresh",
+        "label": "dyn"
+      },
+      {
+        "index": 11,
+        "enum_suffix": "ATK",
+        "name": "Attack",
+        "label": ""
+      },
+      {
+        "index": 12,
+        "enum_suffix": "RLS",
+        "name": "Release",
+        "label": ""
+      },
+      {
+        "index": 13,
+        "enum_suffix": "RAT",
+        "name": "Inv/Wet",
+        "label": ""
+      },
+      {
+        "index": 14,
+        "enum_suffix": "MOR",
+        "name": "More",
+        "label": "tape"
+      },
+      {
+        "index": 15,
+        "enum_suffix": "LOP",
+        "name": "Lowpass",
+        "label": ""
+      },
+      {
+        "index": 16,
+        "enum_suffix": "LPQ",
+        "name": "LowpasQ",
+        "label": ""
+      },
+      {
+        "index": 17,
+        "enum_suffix": "HIP",
+        "name": "Hipass",
+        "label": ""
+      },
+      {
+        "index": 18,
+        "enum_suffix": "HPQ",
+        "name": "HipassQ",
+        "label": ""
+      },
+      {
+        "index": 19,
+        "enum_suffix": "PAN",
+        "name": "Pan",
+        "label": ""
+      },
+      {
+        "index": 20,
+        "enum_suffix": "FAD",
+        "name": "Fader",
+        "label": ""
+      }
+    ],
+    "top_comment": "/* ======================================== | ConsoleX3Channel - ConsoleX3Channel.h | Copyright (c) airwindows, Airwindows uses the MIT license",
+    "complexity": {
+      "total_lines": 1464,
+      "fpd_references": 32,
+      "sample_rate_references": 2,
+      "state_var_doubles": 23,
+      "has_proc_cpp": true
+    },
+    "airwindopedia": {
+      "short_description": "",
+      "full_description": "",
+      "categories": [
+        "Utility"
+      ],
+      "is_latest": false,
+      "is_recommended": false,
+      "is_basic": false,
+      "tags": []
+    }
+  },
+  {
+    "name": "ConsoleX3Pre",
+    "slug": "consolex3pre",
+    "source_dir": "plugins/WinVST/ConsoleX3Pre",
+    "files": {
+      "h": "plugins/WinVST/ConsoleX3Pre/ConsoleX3Pre.h",
+      "cpp": "plugins/WinVST/ConsoleX3Pre/ConsoleX3Pre.cpp",
+      "proc_cpp": "plugins/WinVST/ConsoleX3Pre/ConsoleX3PreProc.cpp"
+    },
+    "unique_id": "cx3p",
+    "num_parameters": 21,
+    "parameters": [
+      {
+        "index": 0,
+        "enum_suffix": "SMO",
+        "name": "Smooth",
+        "label": ""
+      },
+      {
+        "index": 1,
+        "enum_suffix": "TRM",
+        "name": "Input",
+        "label": "trim"
+      },
+      {
+        "index": 2,
+        "enum_suffix": "HIG",
+        "name": "High",
+        "label": "eq"
+      },
+      {
+        "index": 3,
+        "enum_suffix": "HMG",
+        "name": "HMid",
+        "label": ""
+      },
+      {
+        "index": 4,
+        "enum_suffix": "LMG",
+        "name": "LMid",
+        "label": ""
+      },
+      {
+        "index": 5,
+        "enum_suffix": "BSG",
+        "name": "Bass",
+        "label": ""
+      },
+      {
+        "index": 6,
+        "enum_suffix": "HIF",
+        "name": "HighF",
+        "label": "freq"
+      },
+      {
+        "index": 7,
+        "enum_suffix": "HMF",
+        "name": "HMidF",
+        "label": ""
+      },
+      {
+        "index": 8,
+        "enum_suffix": "LMF",
+        "name": "LMidF",
+        "label": ""
+      },
+      {
+        "index": 9,
+        "enum_suffix": "BSF",
+        "name": "BassF",
+        "label": ""
+      },
+      {
+        "index": 10,
+        "enum_suffix": "THR",
+        "name": "Thresh",
+        "label": "dyn"
+      },
+      {
+        "index": 11,
+        "enum_suffix": "ATK",
+        "name": "Attack",
+        "label": ""
+      },
+      {
+        "index": 12,
+        "enum_suffix": "RLS",
+        "name": "Release",
+        "label": ""
+      },
+      {
+        "index": 13,
+        "enum_suffix": "RAT",
+        "name": "Inv/Wet",
+        "label": ""
+      },
+      {
+        "index": 14,
+        "enum_suffix": "MOR",
+        "name": "More",
+        "label": "tape"
+      },
+      {
+        "index": 15,
+        "enum_suffix": "LOP",
+        "name": "Lowpass",
+        "label": ""
+      },
+      {
+        "index": 16,
+        "enum_suffix": "LPQ",
+        "name": "LowpasQ",
+        "label": ""
+      },
+      {
+        "index": 17,
+        "enum_suffix": "HIP",
+        "name": "Hipass",
+        "label": ""
+      },
+      {
+        "index": 18,
+        "enum_suffix": "HPQ",
+        "name": "HipassQ",
+        "label": ""
+      },
+      {
+        "index": 19,
+        "enum_suffix": "PAN",
+        "name": "Pan",
+        "label": ""
+      },
+      {
+        "index": 20,
+        "enum_suffix": "FAD",
+        "name": "Fader",
+        "label": ""
+      }
+    ],
+    "top_comment": "/* ======================================== | ConsoleX3Pre - ConsoleX3Pre.h | Copyright (c) airwindows, Airwindows uses the MIT license",
+    "complexity": {
+      "total_lines": 1476,
+      "fpd_references": 32,
+      "sample_rate_references": 2,
+      "state_var_doubles": 23,
+      "has_proc_cpp": true
+    },
+    "airwindopedia": {
+      "short_description": "",
+      "full_description": "",
+      "categories": [
+        "Utility"
+      ],
+      "is_latest": false,
+      "is_recommended": false,
+      "is_basic": false,
+      "tags": []
+    }
+  },
+  {
     "name": "ConsoleXBuss",
     "slug": "consolexbuss",
     "source_dir": "plugins/WinVST/ConsoleXBuss",
@@ -9186,6 +9744,63 @@
         "Recommended",
         "Latest"
       ]
+    }
+  },
+  {
+    "name": "DeRez4",
+    "slug": "derez4",
+    "source_dir": "plugins/WinVST/DeRez4",
+    "files": {
+      "h": "plugins/WinVST/DeRez4/DeRez4.h",
+      "cpp": "plugins/WinVST/DeRez4/DeRez4.cpp",
+      "proc_cpp": "plugins/WinVST/DeRez4/DeRez4Proc.cpp"
+    },
+    "unique_id": "drz4",
+    "num_parameters": 4,
+    "parameters": [
+      {
+        "index": 0,
+        "enum_suffix": "A",
+        "name": "DownRez",
+        "label": ""
+      },
+      {
+        "index": 1,
+        "enum_suffix": "B",
+        "name": "Bright",
+        "label": ""
+      },
+      {
+        "index": 2,
+        "enum_suffix": "C",
+        "name": "Bassis",
+        "label": ""
+      },
+      {
+        "index": 3,
+        "enum_suffix": "D",
+        "name": "Output",
+        "label": ""
+      }
+    ],
+    "top_comment": "/* ======================================== | DeRez4 - DeRez4.h | Copyright (c) airwindows, Airwindows uses the MIT license",
+    "complexity": {
+      "total_lines": 480,
+      "fpd_references": 52,
+      "sample_rate_references": 2,
+      "state_var_doubles": 2,
+      "has_proc_cpp": true
+    },
+    "airwindopedia": {
+      "short_description": "",
+      "full_description": "",
+      "categories": [
+        "Utility"
+      ],
+      "is_latest": false,
+      "is_recommended": false,
+      "is_basic": false,
+      "tags": []
     }
   },
   {
@@ -11113,21 +11728,21 @@
       {
         "index": 3,
         "enum_suffix": "D",
-        "name": "Dry/Wet",
+        "name": "Inv/Wet",
         "label": ""
       }
     ],
     "top_comment": "/* ======================================== | Dynamics3 - Dynamics3.h | Copyright (c) airwindows, Airwindows uses the MIT license",
     "complexity": {
-      "total_lines": 301,
+      "total_lines": 405,
       "fpd_references": 52,
       "sample_rate_references": 2,
       "state_var_doubles": 1,
       "has_proc_cpp": true
     },
     "airwindopedia": {
-      "short_description": "",
-      "full_description": "",
+      "short_description": "between vari-mu and expander!",
+      "full_description": "This is an essay in finding what something's meant to be, and then running like mad to expand it.\n\nWhat was once a Bezier-spline compressor with extra release speed if you needed it, turned into that, further tweaked, but with vari-mu: it modulates dry/wet now, not just amplitude. Does that make it a Fairchild? Absolutely not, in fact I didn't even reference Fairchild sounds in developing it. The way that was dialed in was to get the sound, not to get 'that' sound. Yes, vari-mu references a vintage beast, even an expensive one, but it's also a simple description of what happenes to ratio (mu) and it brought so much to the behavior of Dynamics3 that it stands on its own.\n\nAnd yes, ratio can be adjusted through the dry/wet, meaning this version of Dynamics can naturally take on 2-buss duties without breaking a sweat… but it's not a dry/wet, it's an inv/wet. Normally, that has a specific meaning: you can apply the plugin, or you can subtract it to produce the opposite effect. Does this subtract the compression, hence the 'invert' part of the control?\n\nNo. What the inv/wet does, is let you do the opposite of compression, adjusted to get as close as possible to what the result SHOULD be if you got the perfect expanded sound as a complement to the compressed one.\n\nThat's phrased a bit awkwardly, I'll try again. If you have a compressed sound, and the start of transient attacks is a little dynamic 'pop' before the compression hits, the 'inv' range gives you an expansion, where the start of the transient is suppressed and then the volume flares up after that.\n\nHow much? It's sensitive to threshold, and to release speed. Back off on either one, and the expansion will back off too. Or if you ramp it up, it'll go into distortion but that's better than the kind of spikes you'd otherwise get. If threshold is almost, but not quite, 1.0 (pure 1.0 is also a bypass to the plugin) then full inv (expansion) leaves everything much quieter, because it's expanding down from that point. It doesn't go to complete silence because it's not a gate. If you speed up the release time, this also helps it not go to crazy expansion boosts, just like if you're heavily compressed, faster release time will help it not be squished into silence.\n\nThe thing is, though, it's almost not worth trying to put it into words. The whole Dynamics3 experience is that, if you have a sense of compression, you should be able to dial that in effortlessly and immediately. Attack to get the speed of attack, release for how fast it springs back, threshold down to where it does what you want, ratio (dry/wet) for subtlety, boom. If you don't have a sense of compression, this plugin will teach you and make it seem easy and discoverable, as it should be.\n\nThen, with one slide from compression to expansion, it can broaden the impact of transients until they're dense and solid, or it can flare up the body behind a thin percussive attack, or pretend it's a gated reverb effect, or de-ambience a room sound, or all those things combined, to taste, with exactly the same controls (under the hood, it's a whole different algorithm, but it's meant to feel like an extension of the same thing).\n\n…as it should be.\n\nDynamics3 has been getting revision after revision, to get it to this place: coming out as the first glimpse of what's going to be an amazing new ConsoleX3, where all the parts are this good and work this well together. If you've ever liked anything about any of the Bezier spline compressors… this'll probably be your new favorite, as it is mine. All the others are of course still there, it's just that I can't imagine you needing them now :)",
       "categories": [
         "Utility"
       ],
@@ -19724,7 +20339,7 @@
     ],
     "top_comment": "/* ======================================== | PurestConsole4Buss - PurestConsole4Buss.h | Copyright (c) airwindows, Airwindows uses the MIT license",
     "complexity": {
-      "total_lines": 341,
+      "total_lines": 334,
       "fpd_references": 52,
       "sample_rate_references": 2,
       "state_var_doubles": 1,
@@ -19775,7 +20390,7 @@
     ],
     "top_comment": "/* ======================================== | PurestConsole4Channel - PurestConsole4Channel.h | Copyright (c) airwindows, Airwindows uses the MIT license",
     "complexity": {
-      "total_lines": 339,
+      "total_lines": 333,
       "fpd_references": 52,
       "sample_rate_references": 2,
       "state_var_doubles": 1,
@@ -26052,7 +26667,7 @@
     ],
     "top_comment": "/* ======================================== | X2Buss - X2Buss.h | Copyright (c) airwindows, Airwindows uses the MIT license",
     "complexity": {
-      "total_lines": 1097,
+      "total_lines": 1079,
       "fpd_references": 56,
       "sample_rate_references": 14,
       "state_var_doubles": 26,
@@ -28889,7 +29504,7 @@
       "proc_cpp": "plugins/WinVST/kRockstar/kRockstarProc.cpp"
     },
     "unique_id": "krok",
-    "num_parameters": 3,
+    "num_parameters": 4,
     "parameters": [
       {
         "index": 0,
@@ -28906,13 +29521,19 @@
       {
         "index": 2,
         "enum_suffix": "C",
+        "name": "DownRez",
+        "label": ""
+      },
+      {
+        "index": 3,
+        "enum_suffix": "D",
         "name": "Dry/Wet",
         "label": ""
       }
     ],
     "top_comment": "/* ======================================== | kRockstar - kRockstar.h | Copyright (c) airwindows, Airwindows uses the MIT license",
     "complexity": {
-      "total_lines": 1361,
+      "total_lines": 1371,
       "fpd_references": 64,
       "sample_rate_references": 2,
       "state_var_doubles": 118,
