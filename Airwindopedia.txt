@@ -25,7 +25,7 @@ Distortion: Distortion, Edge, Dirt, Mackity, Density3, ZOutputStage, Density2, Z
 
 Dithers: Dark, PaulWide, PaulDither, TPDFWide, TPDFDither, NotJustAnotherDither, NotJustAnotherCD, Beam, TapeDither, SpatializeDither, VinylDither, DoublePaul, Ditherbox, BuildATPDF, NodeDither, StudioTan, DitherMeTimbers, DitherMeDiskers, RawTimbers, RawGlitters, NaturalizeDither, HighGlossDither, DitherFloat
 
-Dynamics: Dynamics3, Pressure6, Dynamics2, BeziComp, Pop3, Pop2, Pressure5, StoneFireComp, Dynamics, Pop, DigitalBlack, Logical4, VariMu, ButterComp2, curve, Overheads, Recurve, Pyewacket, BlockParty, SoftGate, Thunder, Compresaturator, DrumSlam, ButterComp, BrassRider, Point, Gatelope, PodcastDeluxe, Podcast, Swell, PurestSquish, Pressure4, Surge, SurgeTide
+Dynamics: Dynamics3, Pressure6, Dynamics2, BeziComp, Pop3, Pop2, X2Buss, Pressure5, StoneFireComp, Dynamics, Pop, DigitalBlack, Logical4, VariMu, ButterComp2, curve, Overheads, Recurve, Pyewacket, BlockParty, SoftGate, Thunder, Compresaturator, DrumSlam, ButterComp, BrassRider, Point, Gatelope, PodcastDeluxe, Podcast, Swell, PurestSquish, Pressure4, Surge, SurgeTide
 
 Effects: TakeCare, RingModulator, Dubly3, Dubly2, GalacticVibe, CloudCoat, Disintegrate, Fracture2, Dubly, Pafnuty2, PitchNasty, Trianglizer, ShortBuss, GuitarConditioner, Aura, TremoSquare, Tremolo, GlitchShifter, Gringer, Exciter, Energy2, Energy, Facet, Fracture, PowerSag2, PowerSag, Preponderant, Nikola
 
@@ -4414,7 +4414,7 @@ And then there's Pear.
 
 So this is basically a kinder, gentler version of PearEQ. It's way nicer than AngleFilter or PointyDeluxe, but it's still strong on character. It's got an ability to strongly shape frequency ranges, but tends to sound more cohesive and less clinical. It's softer and nicer than PearEQ (a six-band) and is easier to come to grips with, as it's just four nice-sounding bands.
 
-PearLiteEQ is for being friends with your sound. Though you can do pretty extreme EQ moves with it, it resists turning into total sound deconstruction, it hangs onto the basic tone of the sounds it's working on. It's not quite as invisible as a time-aligned BexEQ, but it also doesn't have to run latency. It's the sort of thing you might build into a console emulation or have on every track of your mix, and Pear will continue to find use as a kind of crossover in Airwindows EQ designs: neither so surgical that it's clinical, nor so 'character' that it's awkward and messy.
+PearLiteEQ is for being friends with your sound. Though you can do pretty extreme EQ moves with it, it resists turning into total sound deconstruction, it hangs onto the basic tone of the sounds it's working on. It's not quite as invisible as a time-aligned BezEQ, but it also doesn't have to run latency. It's the sort of thing you might build into a console emulation or have on every track of your mix, and Pear will continue to find use as a kind of crossover in Airwindows EQ designs: neither so surgical that it's clinical, nor so 'character' that it's awkward and messy.
 
 I hope PearLiteEQ brightens your day :)
 
@@ -6656,6 +6656,20 @@ One thing about an acoustic guitar is, it's also a miniature room made out of wo
 And so we have WoodenBox. Like the older reverbs based on ClearCoat, it has a bunch of different spaces/colors on tap. But they're all extremely tiny compared to even a small room. There's enough going on in them to produce a vague stereo-ish quality, but not so much that it's a chorus effect. The tone is dense, confined: it doesn't replace the need for a room or chamber sound. But it doctors and reshapes the tone in the way that a simple room reverb never would. And it can be used on many things beyond guitars… for instance, synth patches, or perhaps electronic drums.
 
 I don't know quite where this leads, but it's an interesting start to have made. People who were asking to get smaller rooms out of me… well, you're still getting those, but first you get stuck in a wooden box :)
+
+############ X2Buss is an updated version of the buss processing from ConsoleX2.
+
+Here's a sort of update. I've put a lot of work into the new Dynamics3, for the purpose of using it in ConsoleX3 when that's done. In doing that, I came up with some upgrades for the Bezier compression, and they weren't there when I did ConsoleX2 and ConsoleH… and on top of that, those used a very different sort of buss compression, which sort of speeded up rather than getting more intense. My idea with it had been to do a one-knob buss compressor that was really easy to dial in. I'll be replacing it with the full Dynamics3, vari-mu and expansion and all.
+
+So, what to do with the orphaned buss comp?
+
+Update it as a standalone. It no longer needs you to use the whole Console system, no longer has all the features in that, but there's one part it hangs on to: the ConsoleX2 EQ. So you get, not the BezEQ of the upcoming Console, but SmoothEQ2, based on more normal, traditional biquad filter EQ. Then, the cleaned-up version of the X2 buss comp, and then an output fader that's unity gain at the center, for gain trim.
+
+But one more thing: now the safety clipper after all this isn't ClipOnly2, like in ConsoleX2. It's ClipOnly3, with the little window of noise transitioning between unclipped and the edge of clipping… which itself is gentler than usual, like every version of ClipOnly.
+
+So, while I work on many other exciting things, here's a plugin that's like a previous Console's output stages, but with every detail slightly refined and polished, and in a standalone form so people can fool with it without having to go full Console. And it gives me time to work on some of the new plugins, and to test the new Meter, which needs a new video (already) because of how much it too has changed.
+
+X2Buss might serve as an interesting variation on 'loudenate', given the tone shaping possibilities, the unusual compression and the latest output clipping stage. Let me know if this fills a need :)
 
 ############ XBandpass is a distorted digital EQ, inspired by retro sampler DSP.
 
