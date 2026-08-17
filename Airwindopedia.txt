@@ -29,7 +29,7 @@ Dynamics: Dynamics3, Pressure6, Dynamics2, BeziComp, Pop3, Pop2, X2Buss, Pressur
 
 Effects: TakeCare, RingModulator, Dubly3, Dubly2, GalacticVibe, CloudCoat, Disintegrate, Fracture2, Dubly, Pafnuty2, PitchNasty, Trianglizer, ShortBuss, GuitarConditioner, Aura, TremoSquare, Tremolo, GlitchShifter, Gringer, Exciter, Energy2, Energy, Facet, Fracture, PowerSag2, PowerSag, Preponderant, Nikola
 
-Filter: BezEQ3, Suzan, SmoothEQ3, PearEQ, PearLiteEQ, FatEQ, SmoothEQ2, BezEQ2, SmoothEQ, Parametric, Dattorro, Donut, Silken, Stonefire, AngleEQ, AngleFilter, Isolator3, BezEQ, Baxandall3, Baxandall2, Baxandall, Pear2, Capacitor2, Distance3, Pear, ResEQ2, SubTight, CStrip2, Weight, Isolator2, Kalman, PrimeFIR, Holt2, Holt, ToneSlant, AverMatrix, Average, MackEQ, Hull2, Hull, EQ, Capacitor, Isolator, TapeFat, ResEQ, Lowpass2, Highpass2, Distance, Distance2, Lowpass, Highpass
+Filter: BezEQ3, Suzan, SmoothEQ3, PearEQ, PearLiteEQ, RetroBass, FatEQ, SmoothEQ2, BezEQ2, SmoothEQ, Parametric, Dattorro, Donut, Silken, Stonefire, AngleEQ, AngleFilter, Isolator3, BezEQ, Baxandall3, Baxandall2, Baxandall, Pear2, Capacitor2, Distance3, Pear, ResEQ2, SubTight, CStrip2, Weight, Isolator2, Kalman, PrimeFIR, Holt2, Holt, ToneSlant, AverMatrix, Average, MackEQ, Hull2, Hull, EQ, Capacitor, Isolator, TapeFat, ResEQ, Lowpass2, Highpass2, Distance, Distance2, Lowpass, Highpass
 
 Lo-Fi: DeRez4, DeBez, HipCrush, Flutter2, DeRez3, Pockey2, CrunchyGrooveWear, GrooveWear, Pockey, Flutter, DeRez2, BitGlitter, DeRez, TapeBias, ChromeOxide, Cojones, Vibrato, Bite, Deckwrecka, DustBunny
 
@@ -5030,6 +5030,22 @@ This is because, contrary to modern practice, there's huge power in being able t
 It's the mids equivalent of Airwindows Weight for bass, and it works incredibly well (even if you do it with biquads or EQ-design cookbooks). And I don't have the analog-Console projects finished yet… but you can have this part of it now.
 
 Use the 'ow argh way too extreme' settings like 1.0, where everything kind of turns into an audio laser, to dial in exactly what spot opens up an instrument or voice for maximum passion and sonority. Then, dial it back to around 0.5 and begin increasing it, seeing at what point you've got too much of a good thing. ResEQ2 is great at being a subtle light-bringer and giving clarity to a track. It's also a full-on energy weapon that can be set to 'way too much', so use it however you please. The resonance increases as you turn it up, so feel free to dial it back if it gets ringy. Probably not a good plugin for mixing live sound unless you like dial-a-feedback :) hope you enjoy ResEQ2!
+
+############ RetroBass is a special kind of highpass.
+
+It started with a second-and-fourth-harmonic generator I stumbled into (never fear, you'll get that too). Though it was a little more complex than the simplest second harmonic generators, it still had the unmistakable signs of them: you could mess with the settings until the output clipped like mad and still you'd not really hear what it was doing. The asymmetry has tone qualities, is warm and all, but at such low harmonics it's just so hard to hear.
+
+Causing me to wonder: can you use that to take away low frequencies like a filter?
+
+So, combining it with a simpler version of the highpass filter I use in Channel, I start experimenting (on a livestream) by modulating it with the same IIR stuff I'm subtracting to make the highpass. Not only that, this asymmetrical even-harmonics thing is using the aliasing-manipulation hack I came up with for normal distortions just recently (and that is buck wild because I invented that on purely hard clipping, but it generalizes) and the next thing you know I'm figuring out whether it's best to bring it in directly, or inverted.
+
+And I observe that it produces this funny double bump of a distortion, but one way around the initial lobe of what was once a sine wave normalized to 1.0, is bigger, and what follows is both smaller and a tighter shape. It's acting like it's taking energy in the oscillating wave, and running out mid-oscillation. This is what analog circuits do, when their coupling capacitors run out of steam. It's just being done in a peculiar way.
+
+And dialing it in using the test waves, and then trying it out on lots of different things… I discover that it's RetroBuss. It's better than anything else I've had, for specifically making stuff bass-starved in a retro-seeming way. It sounds like old gear not designed for modern subs.
+
+Not only that, if I push it farther, it starts to get into those hot harmonic-rich zones that make some old vocals sound so intense. It's like a treble zing that is done through weakening the fundamental. Very handy.
+
+RetroBass will continue to be useful in things like retro consoles, but right now it's a standalone highpass you can use however you like. There's more to follow (I did mention the aliasing thing designed around hard clipping) but RetroBass leads the way. :)
 
 ############ Reverb is simplified and tuned MatrixVerb, adjusting everything for each optimum verb size.
 

@@ -235,7 +235,11 @@ void		PunchyDeluxe::PunchyDeluxeKernel::Reset()
 			angS[x][y] = 0.0;angA[x][y] = 0.0;
 		}
 	}
-	for(int y=0; y<14; y++) angG[y] = 0.0;
+	for(int y=0; y<14; y++) {
+		angG[y] = 0.0;
+		for (int x = 0; x < bip_total; x++) bip[x][y] = 0.0;
+	}
+	for (int x = 0; x < bip_total; x++) bop[x] = 0.0;
 	
 	fpd = 1.0; while (fpd < 16386) fpd = rand()*UINT32_MAX;
 }
@@ -312,6 +316,7 @@ void		PunchyDeluxe::PunchyDeluxeKernel::Process(	const Float32 	*inSourceP,
 			}
 			inputSample += band;
 			inputSample *= drive;
+			double bip_delta = inputSample;
 			inputSample = fmin(fmax(inputSample,-M_PI_2),M_PI_2);
 			long double X = inputSample; X *= X; //long double for even
 			long double temp = inputSample * X; //the initial multiplies
@@ -327,12 +332,19 @@ void		PunchyDeluxe::PunchyDeluxeKernel::Process(	const Float32 	*inSourceP,
 			inputSample += temp*0.00000000000000000001957294106339126;
 			//retain mantissa of a long double increasing power function
 			//long double probably doesn't handle more than 36 digits or so
+			bip[bip_dvA][x] = bip_delta - inputSample; // these are derivatives: raw clip is position
+			bip[bip_dvB][x] = bip[bip_pvA][x]-bip[bip_dvA][x]; bip[bip_pvA][x] = bip[bip_dvA][x];//velocity
+			bip[bip_dvC][x] = bip[bip_pvB][x]-bip[bip_dvB][x]; bip[bip_pvB][x] = bip[bip_dvB][x];//acceleration
+			bip[bip_dvD][x] = bip[bip_pvC][x]-bip[bip_dvC][x]; bip[bip_pvC][x] = bip[bip_dvC][x];//jerk
+			double bip_dvE = bip[bip_pvD][x]-bip[bip_dvD][x]; bip[bip_pvD][x] = bip[bip_dvD][x];//snap
+			inputSample *= (1.0+(fabs(bip[bip_dvC][x])*0.0618)+(fabs(bip[bip_dvD][x])*-0.05982)+(fabs(bip_dvE)*0.0206));
 		}
 		
 		if (pad < 1.0) {
 			inputSample *= pad;
 		}
 		
+		double bop_delta = inputSample;		
 		inputSample = fmin(fmax(inputSample,-M_PI_2),M_PI_2);
 		long double X = inputSample; X *= X; //long double for even
 		long double temp = inputSample * X; //the initial multiplies
@@ -348,6 +360,13 @@ void		PunchyDeluxe::PunchyDeluxeKernel::Process(	const Float32 	*inSourceP,
 		inputSample += temp*0.00000000000000000001957294106339126;
 		//retain mantissa of a long double increasing power function
 		//long double probably doesn't handle more than 36 digits or so
+		bop[bip_dvA] = bop_delta - inputSample; // these are derivatives: raw clip is position
+		bop[bip_dvB] = bop[bip_pvA]-bop[bip_dvA]; bop[bip_pvA] = bop[bip_dvA];//velocity
+		bop[bip_dvC] = bop[bip_pvB]-bop[bip_dvB]; bop[bip_pvB] = bop[bip_dvB];//acceleration
+		bop[bip_dvD] = bop[bip_pvC]-bop[bip_dvC]; bop[bip_pvC] = bop[bip_dvC];//jerk
+		double bop_dvE = bop[bip_pvD]-bop[bip_dvD]; bop[bip_pvD] = bop[bip_dvD];//snap
+		inputSample *= (1.0+(fabs(bop[bip_dvC])*0.0618)+(fabs(bop[bip_dvD])*-0.05982)+(fabs(bop_dvE)*0.0206));
+		
 		
 		//begin 32 bit floating point dither
 		int expon; frexpf((float)inputSample, &expon);
