@@ -150,7 +150,9 @@ public:
 		bool flip;
 		enum {
 			bip_dvA, bip_dvB, bip_dvC, bip_dvD, bip_pvA, bip_pvB, bip_pvC, bip_pvD,
-			bip_drbLA, bip_drbLB, bip_drbLC, bip_drbLD, bip_prbLA, bip_prbLB, bip_prbLC, bip_prbLD,
+			bip_drbLA, bip_drbLB, bip_drbLC, bip_drbLD,
+			bip_praLA, bip_praLB, bip_praLC, bip_praLD,
+			bip_prbLA, bip_prbLB, bip_prbLC, bip_prbLD,
 			bip_total //each distortion section can have one of these, it stacks well
 		}; //not remotely elliptic BLEP antialiasing, instead it is derivative BIP :D
 		double bip[bip_total];

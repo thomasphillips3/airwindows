@@ -248,10 +248,10 @@ void		ChannelX::ChannelXKernel::Process(	const Float32 	*inSourceP,
 				inputSampleL = fma(((inputSampleL*inputSampleL) * -0.166666666666666),(inputSampleL*inputSampleL),inputSampleL);
 				inputSampleL /= rbSampleLA*0.96;
 				bip[bip_drbLA] = bip_delta - inputSampleL; // these are derivatives: raw clip is position
-				bip[bip_drbLB] = bip[bip_prbLA]-bip[bip_drbLA]; bip[bip_prbLA] = bip[bip_drbLA];//velocity
-				bip[bip_drbLC] = bip[bip_prbLB]-bip[bip_drbLB]; bip[bip_prbLB] = bip[bip_drbLB];//acceleration
-				bip[bip_drbLD] = bip[bip_prbLC]-bip[bip_drbLC]; bip[bip_prbLC] = bip[bip_drbLC];//jerk
-				double bip_drbE = bip[bip_prbLD]-bip[bip_drbLD]; bip[bip_prbLD] = bip[bip_drbLD];//snap
+				bip[bip_drbLB] = bip[bip_praLA]-bip[bip_drbLA]; bip[bip_praLA] = bip[bip_drbLA];//velocity
+				bip[bip_drbLC] = bip[bip_praLB]-bip[bip_drbLB]; bip[bip_praLB] = bip[bip_drbLB];//acceleration
+				bip[bip_drbLD] = bip[bip_praLC]-bip[bip_drbLC]; bip[bip_praLC] = bip[bip_drbLC];//jerk
+				double bip_drbE = bip[bip_praLD]-bip[bip_drbLD]; bip[bip_praLD] = bip[bip_drbLD];//snap
 				inputSampleL *= (1.0+(fabs(bip[bip_drbLC])*0.0618)+(fabs(bip[bip_drbLD])*-0.05982)+(fabs(bip_drbE)*0.0206));
 			}
 			inputSampleL -= rbSampleLA*0.92;
