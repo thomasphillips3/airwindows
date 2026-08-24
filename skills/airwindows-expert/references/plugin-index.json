@@ -4301,6 +4301,59 @@
     }
   },
   {
+    "name": "ChannelX",
+    "slug": "channelx",
+    "source_dir": "plugins/WinVST/ChannelX",
+    "files": {
+      "h": "plugins/WinVST/ChannelX/ChannelX.h",
+      "cpp": "plugins/WinVST/ChannelX/ChannelX.cpp",
+      "proc_cpp": "plugins/WinVST/ChannelX/ChannelXProc.cpp"
+    },
+    "unique_id": "chaX",
+    "num_parameters": 3,
+    "parameters": [
+      {
+        "index": 0,
+        "enum_suffix": "A",
+        "name": "Console Type",
+        "label": ""
+      },
+      {
+        "index": 1,
+        "enum_suffix": "B",
+        "name": "Drive",
+        "label": "%"
+      },
+      {
+        "index": 2,
+        "enum_suffix": "C",
+        "name": "Output",
+        "label": ""
+      }
+    ],
+    "top_comment": "/* ======================================== | ChannelX - ChannelX.h | Copyright (c) airwindows, Airwindows uses the MIT license",
+    "complexity": {
+      "total_lines": 663,
+      "fpd_references": 52,
+      "sample_rate_references": 2,
+      "state_var_doubles": 7,
+      "has_proc_cpp": true
+    },
+    "airwindopedia": {
+      "short_description": "Channel9 into a profusion of wild experiments",
+      "full_description": "Everything's the same, and nothing is the same.\n\nIt's quite hard to tell what will happen with this plugin update. To surface appearances it's exactly the same as Console9, right down to the slightly odd choices like a (lower slope) interleaved IIR filter for highpassing. The controls and what they do are exactly the same. It still has named 'modes' it operates in, still has a drive control that produces the Spiral saturator at 100% and Density at 200% and crossfades from dry to Spiral to Density, linearly. This is what Channel9 has had since 2021.\n\nIt's not 2021 anymore… and Chris from Airwindows has been responding to the pressure of vibecode guys flooding the plugin market by trying new stuff more often… based on the existing Airwindows codebase, and pretty much nothing else. And Channel's number came up. (technically, letter, since X can be used for 10)\n\nLonghand was an experiment in using a Taylor series to make a sine function 'by hand' in case building it out of a single, continuous algorithm sounded better than the stock, optimized form. It seemed to sound nice. Both the sine part, and the Spiral part of ChannelX are now made that way, longhand, at very high precision.\n\nRetroBass came out just last week! It involves modulating even harmonics into the sound. ChannelX now includes this in its highpasses, but still uses the dielectric modulation from Capacitor, and also still uses interleaved filters, which RetroBass does NOT use.\n\nA stack of other plugins are being updated with an experiment I did inspired by elliptic BLEP antialiasing! But where that is established as a way to flawlessly synthesize a filtered result to any degree of high-order filter ripple, my experiments veered off to produce a tweak that operates over ONE sample, not to delete aliasing but to doctor it in such a way that high frequencies remain locked in place and do not 'come forward' in the way aliased highs seem to do. Totally other thing, seems to work, zero ripple or blur or SRC-like qualities. The directness is incredible. (people don't seem to go for this quality very often in 2026, which might be as good a reason as any to pursue it)\n\nSo ChannelX is a wild mix of very new experiments under a familiar surface. There have been times I freaked out over how good it sounded compared to Channel9. With a bit of luck this bodes well for new plugins coming up. We shall see.",
+      "categories": [
+        "Tone Color"
+      ],
+      "is_latest": true,
+      "is_recommended": false,
+      "is_basic": false,
+      "tags": [
+        "Latest"
+      ]
+    }
+  },
+  {
     "name": "ChimeyDeluxe",
     "slug": "chimeydeluxe",
     "source_dir": "plugins/WinVST/ChimeyDeluxe",
@@ -9349,6 +9402,75 @@
     "airwindopedia": {
       "short_description": "retro digital tones",
       "full_description": "Still working like mad on Meter, but I've got something of a special treat.\n\nWhat if, rather than go to great lengths to emulate something super vintage and unobtainable, you just… did something else, that ended up pulling a lot of weight and being great at exactly what the vintage thing did, at its best?\n\nDeRez4 is the first retro digital tone-maker to do what it does without ANY bitcrushing. Seriously. It runs everything at full floating point resolution… double precision, where that's available such as in Reaper using the VST build. It's doing it all with a sort of frequency crushing… but not like any kind I've tried before. And while it makes use of my Bezier filters, the guts of it are totally made out of hard, pointy line segments laid end to end, which I'm not sure if that's been used for this purpose before (after all, everyone trying to get the retro digital thing starts with bitcrushing and goes from there to layer 'analog color' over it…)\n\nThis one's radically different from all that. The underlying frequency crush can be used to resynthesize pointy transients on upsampled audio, in line with some of the scarier high end audiophile designs. It'll throw a layer of glitter onto anything you give it, but very much 'fake digital' in nature, not anything natural. That's the underlying engine. At much lower frequency crushes, it adds a characteristic edge.\n\nThe other two controls, Bright and Bassis, are each double Bezier filters. One in front of the frequency crush, one behind. Bright is sort of able to resist aliasing but not really: its real strength lies in drawing neat little radiuses to round off every point the frequency-crush creates. Doesn't matter what sample rate you're at, it just helps it work better. Then Bassis functions as a Bezier highpass… and layered the way that it is, it brings a curious resonant quality to whatever you put through DeRez4. Then there's an output trim, because these things can lead to peaks becoming more punchy and energetic than the original sound.\n\nDeRez4 is able to make a strong claim for 'better at retro digital vibe than even modeling the heck out of real retro machines'. It's always possible to get real live raw hardware (at great cost) to go do this sort of thing for real and all… but in the absence of that, or if it's a lot of trouble to run with that authentic workflow, it turns out there's another path to consider.\n\nThat's DeRez4: instead of emulating, do an entirely other thing, done at the highest possible resolution but generating a whole other kind of sound that turns out to do a startlingly similar job. Conveniently, and for free.",
+      "categories": [
+        "Utility"
+      ],
+      "is_latest": false,
+      "is_recommended": false,
+      "is_basic": false,
+      "tags": []
+    }
+  },
+  {
+    "name": "DeRez5",
+    "slug": "derez5",
+    "source_dir": "plugins/WinVST/DeRez5",
+    "files": {
+      "h": "plugins/WinVST/DeRez5/DeRez5.h",
+      "cpp": "plugins/WinVST/DeRez5/DeRez5.cpp",
+      "proc_cpp": "plugins/WinVST/DeRez5/DeRez5Proc.cpp"
+    },
+    "unique_id": "drz5",
+    "num_parameters": 6,
+    "parameters": [
+      {
+        "index": 0,
+        "enum_suffix": "A",
+        "name": "Derez",
+        "label": ""
+      },
+      {
+        "index": 1,
+        "enum_suffix": "B",
+        "name": "Trim",
+        "label": ""
+      },
+      {
+        "index": 2,
+        "enum_suffix": "C",
+        "name": "Square",
+        "label": ""
+      },
+      {
+        "index": 3,
+        "enum_suffix": "D",
+        "name": "Bright",
+        "label": ""
+      },
+      {
+        "index": 4,
+        "enum_suffix": "E",
+        "name": "Bassis",
+        "label": ""
+      },
+      {
+        "index": 5,
+        "enum_suffix": "F",
+        "name": "Output",
+        "label": ""
+      }
+    ],
+    "top_comment": "/* ======================================== | DeRez5 - DeRez5.h | Copyright (c) airwindows, Airwindows uses the MIT license",
+    "complexity": {
+      "total_lines": 549,
+      "fpd_references": 52,
+      "sample_rate_references": 2,
+      "state_var_doubles": 5,
+      "has_proc_cpp": true
+    },
+    "airwindopedia": {
+      "short_description": "",
+      "full_description": "",
       "categories": [
         "Utility"
       ],
